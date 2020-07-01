@@ -265,7 +265,7 @@ paylifeButton.onclick = function () {
 //  6.4
 // 更改我放飞机节点对象视图 位置  理解
 ourPlane.updataOurPlanePos = function () {
-  this.node.style.left = this.x - 33 + "px";+
+  this.node.style.left = this.x - 33 + "px";
   this.node.style.top = this.y - 40 + "px";
 };
 ourPlane.updataOurPlanePos();
