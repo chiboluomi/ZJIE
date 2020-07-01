@@ -1,0 +1,16 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "15378556",
+      "name": "lua",
+      "font_class": "lua",
+      "unicode": "ebfd",
+      "unicode_decimal": 60413
+    }
+  ]
+}
