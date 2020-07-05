@@ -1,0 +1,16 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "9567591",
+      "name": "pull_down",
+      "font_class": "pull_down",
+      "unicode": "e508",
+      "unicode_decimal": 58632
+    }
+  ]
+}

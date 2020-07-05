@@ -1,0 +1,25 @@
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1593433362962'); /* IE9 */
+  src: url('iconfont.eot?t=1593433362962#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAO8AAsAAAAAB9AAAANvAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDBgqDOIMFATYCJAMMCwgABCAFhG0HNxvMBlFULgJkPxJsWzVrEQylcWAonWw5cCS8pGk7Hv47fLtvZn6tllCpGO/HQ7VSBKJ9l3hBFnh5vQv8+5/bDC3pXscjyTRpn9zf/PYFa94yKREihMaFXdUHWRFn90z8oD6DMtrnuZzeXSU+v2W5rE1jr+dHvQDjgAIdc4LkWYEE5H3Ahu5nNYGmeTX6/mS11coKs1MgnkLf1soZg9JQHupCtWJkEV9V1NNLuga+BN+P/zSjTFLJzJ4Hj2NP6/1q/BpSXWeIc48gm84GfhwZGzSFuKx0HDOjxAZTU9VazflVRUhThf//J5Bq+upG/3iJqDJL22AFk4lfDI6A4BdnUsL1j6OKOj7wjVjjNatSo9HZEORnlmZOamsjtVY2Iy1MVeFM4SM7AtA+XblLQUHaS6FEthkZwRWlk4IUjNAeiKtnooq6wHxYCcLJt7WNr43H56rKwc8PtbRwB7R8AdLeyUYuQfAd4tKnqPQoboui5uhTnwXMZo2wO8F0zgitI4KvGQ+cI0SXUeVxVGSFKE1Ctji3Obe4tn83trnwEdOcUycJ6UD3jf6DFgh842fPYcgX1BJUIguwawI92ZVMD9yOioLWAvllb27tUsCaA6zsU2/lHDl5JSJ05B1t82zdd9GJkODlfBv+TYBdA+i/8XOAGGhkhNOEh4Y1/M9k5g/jVF6+8JPjsKBIsxQ0yzWUtIn+6OrK/sRCKiPTXOqjpoPDMztxb+r6nOCKdwMiXiYZHor73eJezgtu8hAOgBlC1URlgK4BKuTf/QZ+PA6VhbEZf3WmbxXwU+wfJ7aZIQXyM+p35gz+lKxjRdEUpjEXRepIjWB24W/YEigWLGbkGfoN1086lxLqJgmSmjlkdQtkYW2gomUTVXVbaFo3Hd8yIpiiNLDmBQh9byRd35H1fcjC+qJi6o+qfphoOgyuGVuWIqxaCbQVeuBcIHQpY7ZZVcPyNfqHxBZpRcDeo5BhGNqq6vn0FDMUU/SRR7+jFAMmKIUJrIdJQpALitBVjUCpvNtUi616UsOlVKvaIyCbgjzAcQFCLpJhXm2lWvj8GvIdJGyigVYV3kOCFDYO2hpaHcipNutEu5VzpCNfh6IwgBFICkzAhhIrQUBe3SyCXEpDMCCW62pSNdZV21hen77fOmgyF8yRIkdRu8k8QaFnJpDUNAA=') format('woff2'),
+  url('iconfont.woff?t=1593433362962') format('woff'),
+  url('iconfont.ttf?t=1593433362962') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1593433362962#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-android:before {
+  content: "\e609";
+}
+
+.icon-ios:before {
+  content: "\e612";
+}
+
