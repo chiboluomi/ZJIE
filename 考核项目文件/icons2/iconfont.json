@@ -1,0 +1,30 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "431777",
+      "name": "gift",
+      "font_class": "gift",
+      "unicode": "e707",
+      "unicode_decimal": 59143
+    },
+    {
+      "icon_id": "1043628",
+      "name": "heart",
+      "font_class": "heart",
+      "unicode": "e772",
+      "unicode_decimal": 59250
+    },
+    {
+      "icon_id": "11813160",
+      "name": "eye",
+      "font_class": "eye",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    }
+  ]
+}

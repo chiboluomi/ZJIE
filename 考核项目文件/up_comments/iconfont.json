@@ -1,0 +1,23 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "348397",
+      "name": "comments",
+      "font_class": "comments",
+      "unicode": "ea6e",
+      "unicode_decimal": 60014
+    },
+    {
+      "icon_id": "588387",
+      "name": "good",
+      "font_class": "good",
+      "unicode": "e641",
+      "unicode_decimal": 58945
+    }
+  ]
+}

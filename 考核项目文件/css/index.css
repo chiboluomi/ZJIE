@@ -1,0 +1,812 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+#nav-header .navbar .container-fluid .collapse .nav li a:hover {
+  color: #fc4b7b;
+}
+.banner .carousel .carousel-indicators li {
+  background-color: white !important;
+  margin: 0 !important;
+  width: 12px !important;
+  height: 12px !important;
+  position: relative;
+}
+.banner .carousel .carousel-indicators li span {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: #fc427b;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  cursor: pointer;
+}
+.banner .carousel .carousel-indicators li span:hover {
+  background-color: #fff;
+}
+.banner .carousel .carousel-indicators li.active {
+  margin: 0;
+}
+.banner .carousel .carousel-indicators li.active span {
+  background-color: #fff !important;
+}
+.welcome {
+  width: 100%;
+}
+.welcome .container {
+  width: 95%;
+  margin: 0 auto;
+}
+.welcome .container .row {
+  padding-top: 40px;
+}
+.welcome .container .row .left .p_one {
+  color: #aaabad;
+  font-size: 50px;
+  font-weight: lighter;
+  font-family: 'Poppins', sans-serif;
+}
+.welcome .container .row .left .p_two {
+  width: 70%;
+  font-size: 25px;
+  margin: 15px 0px;
+}
+.welcome .container .row .left .bot {
+  height: 200px;
+  border: 1px solid transparent;
+  width: 100%;
+  position: relative;
+  padding-top: 40px;
+  margin-top: 40px;
+}
+.welcome .container .row .left .bot .b_l {
+  height: 200px;
+  width: 40%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.welcome .container .row .left .bot .b_l .top {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background-color: #fc427b;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  color: white;
+  font-size: 20px;
+}
+.welcome .container .row .left .bot .b_l .top .icons {
+  color: pink;
+  font-size: 20px;
+}
+.welcome .container .row .left .bot .b_l h5 {
+  font-size: 20px;
+}
+.welcome .container .row .left .bot .b_l p {
+  word-spacing: 10px;
+  color: #999999;
+}
+.welcome .container .row .left .bot .b_r {
+  height: 200px;
+  width: 40%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.welcome .container .row .left .bot .b_r .top {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background-color: #fc427b;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  color: white;
+  font-size: 20px;
+}
+.welcome .container .row .left .bot .b_r .top .icons {
+  color: pink;
+  font-size: 20px;
+}
+.welcome .container .row .left .bot .b_r h5 {
+  font-size: 20px;
+}
+.welcome .container .row .left .bot .b_r p {
+  word-spacing: 10px;
+  color: #999999;
+}
+.welcome .container .row .right img {
+  width: 100%;
+}
+.eyes {
+  width: 100%;
+  background-color: #fc427b;
+}
+.eyes .container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 30px 0px;
+}
+.eyes .container .row .center {
+  text-align: center;
+}
+.eyes .container .row .center .icons {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  border: 2px solid white;
+  border-radius: 50%;
+  line-height: 70px;
+}
+.eyes .container .row .center .icons i {
+  font-size: 30px;
+  color: white;
+}
+.eyes .container .row .center h3 {
+  text-align: center;
+  margin: 20px 0px;
+  color: white;
+}
+.eyes .container .row .center p {
+  text-align: center;
+  word-spacing: 8px;
+  color: white;
+}
+.antium {
+  width: 100%;
+}
+.antium .container {
+  width: 90%;
+  margin: 0 auto;
+}
+.antium .container .title {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+.antium .container .paragraph {
+  text-align: center;
+  color: #999999;
+  word-spacing: 4px;
+  font-size: 20px;
+  padding-bottom: 40px;
+}
+.antium .container .row .In {
+  padding-bottom: 10px;
+}
+.antium .container .row .In .image_position {
+  padding: 0;
+  position: relative;
+}
+.antium .container .row .In .image_position img {
+  width: 100%;
+}
+.antium .container .row .In .image_position .l_b {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 80px;
+  height: 70px;
+  background-color: #38d2fe;
+}
+.antium .container .row .In .image_position .l_b .top {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+  height: 40px;
+  line-height: 50px;
+}
+.antium .container .row .In .image_position .l_b .bot {
+  color: white;
+  font-weight: lighter;
+  text-align: center;
+  font-size: 15px;
+  height: 40px;
+  line-height: 11px;
+}
+.antium .container .row .In div {
+  padding-bottom: 25px;
+}
+.antium .container .row .In div a {
+  color: #9999b3;
+}
+.antium .container .row .In div a i {
+  display: inline-block;
+  padding: 0px 7px;
+  color: #ff4f81;
+}
+.antium .container .row .In p {
+  color: #9999b3;
+  word-spacing: 5px;
+  line-height: 26px;
+  padding-bottom: 15px;
+}
+.Image {
+  position: relative;
+  width: 100%;
+}
+.Image .container {
+  width: 100%;
+}
+.Image .container img {
+  width: 100%;
+}
+.Image .container .word {
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  width: 80%;
+}
+.Image .container .word h3 {
+  color: white;
+  color: #786c5c;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+.Image .container .word h2 {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+.Image .container .word p {
+  color: white;
+  word-spacing: 5px;
+  line-height: 30px;
+}
+@media (min-width: 992px) {
+  .Image .container .word h3 {
+    width: 50%;
+  }
+  .Image .container .word h2 {
+    width: 50%;
+  }
+  .Image .container .word p {
+    width: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  .Image .container .word {
+    left: 60px;
+    top: 30px;
+  }
+  .Image .container .word h3 {
+    width: 40%;
+  }
+  .Image .container .word h2 {
+    width: 40%;
+  }
+  .Image .container .word p {
+    width: 40%;
+  }
+}
+.gallery {
+  width: 100%;
+}
+.gallery h2 {
+  padding: 20px 0px;
+  text-align: center;
+}
+.gallery p {
+  text-align: center;
+  color: #999999;
+}
+.gallery .container {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+.gallery .container .row div {
+  margin-top: 20px;
+}
+.gallery .container .row div img {
+  width: 100%;
+}
+.newsletter {
+  width: 100%;
+  background-image: url(../images/bg3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 350px;
+  padding-bottom: 40px;
+}
+.newsletter h2 {
+  text-align: center;
+  color: white;
+  padding-top: 40px;
+}
+.newsletter p {
+  text-align: center;
+  color: #c0c1c2;
+}
+.newsletter .row {
+  width: 95%;
+  margin: 0 auto;
+}
+.newsletter .row div input {
+  padding-left: 5px;
+  width: 100%;
+  outline: none;
+  color: #a0a7ab;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  height: 50px;
+  margin-top: 20px;
+  border: 2px solid transparent;
+}
+.newsletter .row div input.right {
+  background-color: #38d2fe;
+  color: white;
+}
+.masseage {
+  width: 100%;
+}
+.masseage h3 {
+  text-align: center;
+  font-weight: bold;
+}
+.masseage .one {
+  text-align: center;
+  color: #999999;
+  word-spacing: 7px;
+  margin-bottom: 20px;
+}
+.masseage .container {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 400px;
+}
+.masseage .container .row #left .left {
+  margin-top: 20px;
+  padding: 30px 0px;
+  box-shadow: 0px 0px 10px #adb2b6;
+}
+.masseage .container .row #left .left h4 {
+  font-weight: bold;
+  color: #38d2fe;
+  font-family: 'Poppins', sans-serif;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+.masseage .container .row #left .left p {
+  color: #999999;
+  margin-left: 30px;
+}
+.masseage .container .row #left .left p a {
+  color: #999999;
+}
+.masseage .container .row #right {
+  padding: 30px 0px;
+  margin-top: 20px;
+  box-shadow: 0px 0px 10px #adb2b6;
+}
+.masseage .container .row #right h4 {
+  font-weight: bold;
+  color: #38d2fe;
+  font-family: 'Poppins', sans-serif;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.masseage .container .row #right input {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  border: none;
+  border-bottom: 1px solid #000;
+  padding: 8px 0px;
+  color: #999999;
+}
+.masseage .container .row #right input.inpt {
+  margin-top: 15px;
+  border-color: #828282;
+}
+.masseage .container .row #right input.submit {
+  border: none;
+  background-color: #fc427b;
+  color: white;
+  margin-top: 20px;
+  padding: 15px 0px;
+}
+.masseage .container .row #right textarea {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  border: none;
+  border-bottom: 1px solid #828282;
+  margin-top: 10px;
+}
+.footer {
+  width: 100%;
+  background-color: #212020;
+}
+.footer .container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 40px 0px;
+}
+.footer .container .row div h4 {
+  color: white;
+  font-weight: bold;
+}
+.footer .container .row div p {
+  color: #ababab;
+}
+.footer .container .row div p.left {
+  word-spacing: 6px;
+  width: 80%;
+  line-height: 30px;
+}
+.footer .container .row div p.bold {
+  font-weight: bold;
+  color: #f8f9fa;
+  margin-top: 20px;
+}
+.footer .container .row div a {
+  display: block;
+  color: #ababab;
+  margin-bottom: 12px;
+}
+.footer .container .row div a.first {
+  margin-top: 20px;
+}
+.footer .container .row div a:hover {
+  color: white;
+}
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: #646363;
+}
+.bottom {
+  width: 100%;
+  background-color: #212020;
+  padding: 20px 0px;
+}
+.bottom .container .up_top {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin: 0 auto;
+}
+.bottom .container p {
+  margin: 20px 0px;
+  width: 100%;
+  text-align: center;
+  word-spacing: 6px;
+  color: #999999;
+}
+.bottom .container p a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fc427b;
+  padding: 0px 5px;
+}
+.bottom .container p a:hover {
+  color: white;
+}
+@media (min-width: 1200px) {
+  .banner .carousel .carousel-inner .item .carousel-caption p {
+    font-size: 30px;
+  }
+  .banner .carousel .carousel-inner .item .carousel-caption h1 {
+    font-size: 50px;
+  }
+  .welcome .container .row .left .p_one {
+    font-size: 50px;
+  }
+  .welcome .container .row .left .p_two {
+    font-size: 25px;
+  }
+  .welcome .container .row .left .bot .b_l h5 {
+    font-size: 20px;
+  }
+  .welcome .container .row .left .bot .b_l p {
+    font-size: 14px;
+  }
+  .welcome .container .row .left .bot .b_r h5 {
+    font-size: 20px;
+  }
+  .welcome .container .row .left .bot .b_r p {
+    font-size: 14px;
+  }
+  .eyes .container .row .center h3 {
+    font-size: 24px;
+  }
+  .eyes .container .row .center p {
+    font-size: 14px;
+  }
+  .antium .container .title {
+    font-size: 30px;
+  }
+  .antium .container .paragraph {
+    font-size: 20px;
+  }
+  .antium .container .row .In h3 {
+    font-size: 24px;
+  }
+  .antium .container .row .In div a {
+    font-size: 14px;
+  }
+  .antium .container .row .In p {
+    font-size: 14px ;
+  }
+  .Image .container .word h3 {
+    font-size: 24px;
+  }
+  .Image .container .word h2 {
+    font-size: 30px;
+  }
+  .Image .container .word p {
+    font-size: 14px;
+  }
+  .gallery h2 {
+    font-size: 30px;
+  }
+  .gallery p {
+    font-size: 14px;
+  }
+  .newsletter h2 {
+    font-size: 30px;
+  }
+  .newsletter p {
+    font-size: 14px;
+  }
+  .masseage .container .row #left .left h4 {
+    font-size: 23px;
+  }
+  .masseage .container .row #left .left p {
+    font-size: 15px;
+  }
+  .masseage .container .row #left .left p a {
+    font-size: 15px;
+  }
+  .masseage .container .row #right h4 {
+    font-size: 23px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .banner .carousel .carousel-inner .item .carousel-caption p {
+    font-size: 28px;
+  }
+  .banner .carousel .carousel-inner .item .carousel-caption h1 {
+    font-size: 45px;
+  }
+  .welcome .container .row .left .p_one {
+    font-size: 45px;
+  }
+  .welcome .container .row .left .p_two {
+    font-size: 23px;
+  }
+  .welcome .container .row .left .bot .b_l h5 {
+    font-size: 28px;
+  }
+  .welcome .container .row .left .bot .b_l p {
+    font-size: 13px;
+  }
+  .welcome .container .row .left .bot .b_r h5 {
+    font-size: 18px;
+  }
+  .welcome .container .row .left .bot .b_r p {
+    font-size: 13px;
+  }
+  .eyes .container .row .center h3 {
+    font-size: 22px;
+  }
+  .eyes .container .row .center p {
+    font-size: 13px;
+  }
+  .antium .container .title {
+    font-size: 28px;
+  }
+  .antium .container .paragraph {
+    font-size: 18px;
+  }
+  .antium .container .row .In h3 {
+    font-size: 22px;
+  }
+  .antium .container .row .In div a {
+    font-size: 12px;
+  }
+  .antium .container .row .In p {
+    font-size: 13px ;
+  }
+  .Image .container .word h3 {
+    font-size: 22px;
+  }
+  .Image .container .word h2 {
+    font-size: 28px;
+  }
+  .Image .container .word p {
+    font-size: 13px;
+  }
+  .gallery h2 {
+    font-size: 28px;
+  }
+  .gallery p {
+    font-size: 13px;
+  }
+  .newsletter h2 {
+    font-size: 28px;
+  }
+  .newsletter p {
+    font-size: 13px;
+  }
+  .masseage .container .row #left .left h4 {
+    font-size: 22px;
+  }
+  .masseage .container .row #left .left p {
+    font-size: 14px;
+  }
+  .masseage .container .row #left .left p a {
+    font-size: 14px;
+  }
+  .masseage .container .row #right h4 {
+    font-size: 22px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .banner .carousel .carousel-inner .item .carousel-caption p {
+    font-size: 26px;
+  }
+  .banner .carousel .carousel-inner .item .carousel-caption h1 {
+    font-size: 43px;
+  }
+  .welcome .container .row .left .p_one {
+    font-size: 43px;
+  }
+  .welcome .container .row .left .p_two {
+    font-size: 22px;
+  }
+  .welcome .container .row .left .bot .b_l h5 {
+    font-size: 26px;
+  }
+  .welcome .container .row .left .bot .b_l p {
+    font-size: 12px;
+  }
+  .welcome .container .row .left .bot .b_r h5 {
+    font-size: 16px;
+  }
+  .welcome .container .row .left .bot .b_r p {
+    font-size: 12px;
+  }
+  .eyes .container .row .center h3 {
+    font-size: 20px;
+  }
+  .eyes .container .row .center p {
+    font-size: 12px;
+  }
+  .antium .container .title {
+    font-size: 26px;
+  }
+  .antium .container .paragraph {
+    font-size: 16px;
+  }
+  .antium .container .row .In h3 {
+    font-size: 20px;
+  }
+  .antium .container .row .In div a {
+    font-size: 12px;
+  }
+  .antium .container .row .In p {
+    font-size: 12px ;
+  }
+  .Image .container .word h3 {
+    font-size: 20px;
+  }
+  .Image .container .word h2 {
+    font-size: 26px;
+  }
+  .Image .container .word p {
+    font-size: 12px;
+  }
+  .gallery h2 {
+    font-size: 26px;
+  }
+  .gallery p {
+    font-size: 12px;
+  }
+  .newsletter h2 {
+    font-size: 26px;
+  }
+  .newsletter p {
+    font-size: 12px;
+  }
+  .masseage .container .row #left .left h4 {
+    font-size: 20px;
+  }
+  .masseage .container .row #left .left p {
+    font-size: 13px;
+  }
+  .masseage .container .row #left .left p a {
+    font-size: 13px;
+  }
+  .masseage .container .row #right h4 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .banner .carousel .carousel-inner .item .carousel-caption p {
+    font-size: 26px;
+  }
+  .banner .carousel .carousel-inner .item .carousel-caption h1 {
+    font-size: 43px;
+  }
+  .welcome .container .row .left .p_one {
+    font-size: 43px;
+  }
+  .welcome .container .row .left .p_two {
+    font-size: 22px;
+  }
+  .welcome .container .row .left .bot .b_l h5 {
+    font-size: 26px;
+  }
+  .welcome .container .row .left .bot .b_l p {
+    font-size: 12px;
+  }
+  .welcome .container .row .left .bot .b_r h5 {
+    font-size: 16px;
+  }
+  .welcome .container .row .left .bot .b_r p {
+    font-size: 12px;
+  }
+  .eyes .container .row .center h3 {
+    font-size: 20px;
+  }
+  .eyes .container .row .center p {
+    font-size: 12px;
+  }
+  .antium .container .title {
+    font-size: 26px;
+  }
+  .antium .container .paragraph {
+    font-size: 16px;
+  }
+  .antium .container .row .In h3 {
+    font-size: 20px;
+  }
+  .antium .container .row .In div a {
+    font-size: 12px;
+  }
+  .antium .container .row .In p {
+    font-size: 12px ;
+  }
+  .Image .container .word h3 {
+    font-size: 20px;
+  }
+  .Image .container .word h2 {
+    font-size: 26px;
+  }
+  .Image .container .word p {
+    font-size: 12px;
+  }
+  .gallery h2 {
+    font-size: 26px;
+  }
+  .gallery p {
+    font-size: 12px;
+  }
+  .newsletter h2 {
+    font-size: 26px;
+  }
+  .newsletter p {
+    font-size: 12px;
+  }
+  .masseage .container .row #left .left h4 {
+    font-size: 20px;
+  }
+  .masseage .container .row #left .left p {
+    font-size: 13px;
+  }
+  .masseage .container .row #left .left p a {
+    font-size: 13px;
+  }
+  .masseage .container .row #right h4 {
+    font-size: 20px;
+  }
+}

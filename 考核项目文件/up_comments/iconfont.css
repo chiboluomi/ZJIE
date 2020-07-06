@@ -1,0 +1,25 @@
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1593842089697'); /* IE9 */
+  src: url('iconfont.eot?t=1593842089697#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAPUAAsAAAAAB+wAAAOIAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDBgqDUIMqATYCJAMMCwgABCAFhG0HORvzBhHVm1fJfhzGMck6c5ZvQnne2PfgefpO/HNnJuhumbgSUlgKSjz/ve8NgM3NfqkaFaFYkvO8n74j3RAuza//uZzeXSU+v2U5jTloT70XBZhQL6A1JmBcwtgiu4grYpHzIYBFdooidWNN2uDFgJoJIEMG9u+JN6PBNKQKXgR3RV+DrMCFVy1UT4Dlwe/lb0qLFxQuDWrbol+9PtT8VeuvYXqGM6OLh8AdzwQog0ADRQED0q3S0gEd+YuisSyJaY51YxDUWC7HIeDYIjf+wwOFgLhByWkBKCiI1UlxKQMK/hrGO2vuzTV2AwbYBjwSFYG+bVXBAo3N5BnxuLUoFm+zJ69fbl1onUg4vH7tetjE4SzrN4eTSZmZSi1OJNrOiLdZuzEYXRtE5127hjVrQvvyJ9vdsRa1O2svTrVPpWRm9kRisnQIbXhipV10aOZh2xZ7fbgz2XbTtfwhrHPHsmxPhWTmoUUHIsTjbdSGA5a16JBoULdUqr3sTtW/m8jFjHjEnustwyxll275sPngeRebDi1VMFa6fbDeaeU+4BGl/fl8lJenh8rdmHiua6xgi/F1Wwyae7HZO+HTBs9997Vei3Gxgl3PTbxR7tDTxflURu252ON03fahWKmCpTaPaqwydTlQpnaJWJkmC5oWfdewYNuJVD5Ziv75uJwpZ25fv7z9fFfo96JJ70iVdOnnv0BG13p3cIdrrhXwjcvTTwLSb+rKXhl3Sj/fXh9V3fcF52ouAwZI84CpV69myVg9Ewi7JpRrVUvat6NW9FqT1mNb0wNwUOMHBvUfOE/1aV3mby5H87zNTnfPUPV/r20AeJ+/8kGBC2fBEsGLAov774oZHAej8pFGG9PmOAbqRNO8ZwUFWFiAwhMcPj71lwXtZBC8BBNQeMgGGi95UUMqCi5syoIbLzXAogj1B9v4GYVGTBqgMHM5EDJyHBTpuQ6ajDxFDekjuAjxL7jJKBos2ol/TJv8wiVVh1ELOjB/SJY2T/SiwtQbhnfVnOYH5BdySy4YuyEfuuKGPEaH9gmTiAfPtMLCLYa1EuxMGa10UWSf+95X3aiztB4UdRi1oAPzh2Rp815hUYXv3zC8q+YGXIv5hdxS6TB2AwC9SjYQ7loOaZ8wiXjwTCssnAkr9hPs1bUyWuliD+8+90I+D5V088vWB8hWckDZWpRoMXiPrOqKm7RLfyJ3OAA=') format('woff2'),
+  url('iconfont.woff?t=1593842089697') format('woff'),
+  url('iconfont.ttf?t=1593842089697') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1593842089697#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-comments:before {
+  content: "\ea6e";
+}
+
+.icon-good:before {
+  content: "\e641";
+}
+
