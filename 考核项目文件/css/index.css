@@ -36,7 +36,6 @@
   width: 100%;
 }
 .welcome .container {
-  width: 95%;
   margin: 0 auto;
 }
 .welcome .container .row {
@@ -127,7 +126,6 @@
   background-color: #fc427b;
 }
 .eyes .container {
-  width: 90%;
   margin: 0 auto;
   padding: 30px 0px;
 }
@@ -160,7 +158,6 @@
   width: 100%;
 }
 .antium .container {
-  width: 90%;
   margin: 0 auto;
 }
 .antium .container .title {
@@ -227,62 +224,29 @@
   padding-bottom: 15px;
 }
 .Image {
-  position: relative;
   width: 100%;
 }
 .Image .container {
-  width: 100%;
+  margin: 0 auto;
 }
 .Image .container img {
   width: 100%;
 }
-.Image .container .word {
-  position: absolute;
-  left: 50px;
-  top: 50px;
-  width: 80%;
-}
-.Image .container .word h3 {
+.Image .container .row div h3 {
   color: white;
   color: #786c5c;
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
 }
-.Image .container .word h2 {
+.Image .container .row div h2 {
   color: white;
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
 }
-.Image .container .word p {
+.Image .container .row div p {
   color: white;
   word-spacing: 5px;
   line-height: 30px;
-}
-@media (min-width: 992px) {
-  .Image .container .word h3 {
-    width: 50%;
-  }
-  .Image .container .word h2 {
-    width: 50%;
-  }
-  .Image .container .word p {
-    width: 50%;
-  }
-}
-@media (min-width: 1200px) {
-  .Image .container .word {
-    left: 60px;
-    top: 30px;
-  }
-  .Image .container .word h3 {
-    width: 40%;
-  }
-  .Image .container .word h2 {
-    width: 40%;
-  }
-  .Image .container .word p {
-    width: 40%;
-  }
 }
 .gallery {
   width: 100%;
@@ -296,7 +260,6 @@
   color: #999999;
 }
 .gallery .container {
-  width: 90%;
   margin: 0 auto;
   padding-bottom: 30px;
 }
@@ -534,15 +497,15 @@
     font-size: 14px;
   }
   .antium .container .row .In p {
-    font-size: 14px ;
+    font-size: 14px;
   }
-  .Image .container .word h3 {
+  .Image .container .row div h3 {
     font-size: 24px;
   }
-  .Image .container .word h2 {
+  .Image .container .row div h2 {
     font-size: 30px;
   }
-  .Image .container .word p {
+  .Image .container .row div p {
     font-size: 14px;
   }
   .gallery h2 {
@@ -614,7 +577,7 @@
     font-size: 12px;
   }
   .antium .container .row .In p {
-    font-size: 13px ;
+    font-size: 13px;
   }
   .Image .container .word h3 {
     font-size: 22px;
@@ -694,7 +657,7 @@
     font-size: 12px;
   }
   .antium .container .row .In p {
-    font-size: 12px ;
+    font-size: 12px;
   }
   .Image .container .word h3 {
     font-size: 20px;
@@ -774,7 +737,7 @@
     font-size: 12px;
   }
   .antium .container .row .In p {
-    font-size: 12px ;
+    font-size: 12px;
   }
   .Image .container .word h3 {
     font-size: 20px;
