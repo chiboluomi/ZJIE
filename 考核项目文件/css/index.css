@@ -2,8 +2,42 @@
   padding: 0;
   margin: 0;
 }
-#nav-header .navbar .container-fluid .collapse .nav li a:hover {
+#nav-header .container .row {
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+#nav-header .container .row .navbar .container-fluid .collapse {
+  padding-top: 10px;
+}
+#nav-header .container .row .navbar .container-fluid .collapse .nav li a:hover {
   color: #fc4b7b;
+}
+#nav-header .container .row .navbar .container-fluid .navbar-header .navbar-brand {
+  vertical-align: center;
+  font-size: 40px !important;
+  font-weight: bold;
+  text-shadow: 2px 5px 9px #e6e6e6;
+  line-height: 41px;
+}
+@media (min-width: 768px) {
+  #nav-header .container .row .navbar .container-fluid .collapse .nav li.dropdown ul {
+    border-radius: 5px;
+    background-color: #333333 !important;
+    padding-left: 7px !important;
+    padding-right: 7px !important;
+  }
+  #nav-header .container .row .navbar .container-fluid .collapse .nav li.dropdown ul li a {
+    color: white !important;
+    text-align: left !important;
+  }
+}
+@media (max-width: 767px) {
+  #nav-header .container .row .navbar .container-fluid .collapse .nav li.dropdown ul {
+    background-color: #ffff f !important;
+  }
+  #nav-header .container .row .navbar .container-fluid .collapse .nav li.dropdown ul li a {
+    color: #a5a5a5 !important;
+  }
 }
 .banner .carousel .carousel-indicators li {
   background-color: white !important;
@@ -37,6 +71,7 @@
 }
 .welcome .container {
   margin: 0 auto;
+  height: 663px;
 }
 .welcome .container .row {
   padding-top: 40px;
@@ -118,8 +153,13 @@
   word-spacing: 10px;
   color: #999999;
 }
+.welcome .container .row .right {
+  text-align: center;
+}
 .welcome .container .row .right img {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
 }
 .eyes {
   width: 100%;
@@ -225,12 +265,16 @@
 }
 .Image {
   width: 100%;
+  background-image: url('../images/bg2.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
 }
 .Image .container {
   margin: 0 auto;
 }
-.Image .container img {
-  width: 100%;
+.Image .container .row div {
+  padding-top: 50px;
 }
 .Image .container .row div h3 {
   color: white;

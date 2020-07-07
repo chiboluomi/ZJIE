@@ -4,15 +4,32 @@
 }
 
 #nav-header {
-    .navbar {
-        .container-fluid {
-            .collapse {
-                .nav {
-                    li {
+    .container {
+        .row {
+            padding-top: 10px;
+            box-sizing: border-box;
+            .navbar {
+                .container-fluid {
+                    .collapse {
+                        padding-top: 10px;
+                        .nav {
+                            li {
 
 
-                        a:hover {
-                            color: #fc4b7b;
+                                a:hover {
+                                    color: #fc4b7b;
+                                }
+                            }
+                        }
+                    }
+                    .navbar-header{
+                        .navbar-brand{
+                            // height: 80px;
+                            vertical-align: center;
+                            font-size: 40px !important;
+                            font-weight: bold;
+                            text-shadow: 2px 5px 9px #e6e6e6;
+                            line-height: 41px;
                         }
                     }
                 }
@@ -20,7 +37,72 @@
         }
     }
 }
-
+// 导航栏媒体查询
+@media(min-width:768px){
+    #nav-header {
+        .container {
+            .row {
+                .navbar {
+                    .container-fluid {
+                        .collapse {
+                            .nav {
+                                li {
+                                    &.dropdown{
+                                        ul{
+                                            border-radius:5px;
+                                            background-color: #333333 !important;
+                                            padding-left: 7px !important;
+                                            padding-right: 7px !important;
+                                            li{
+                                                a{
+                                                    color: white !important;
+                                                    text-align: left !important;
+                                                }
+                                               
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:767px){
+    #nav-header {
+        .container {
+            .row {
+                .navbar {
+                    .container-fluid {
+                        .collapse {
+                            .nav {
+                                li {
+                                    &.dropdown{
+                                        ul{
+                                 
+                                            background-color: #fffff !important;
+                                          
+                                            li{
+                                                a{
+                                                    color: #a5a5a5 !important;
+                                                   
+                                                }
+                                               
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 .banner {
     .carousel {
         .carousel-indicators {
@@ -67,7 +149,9 @@
 
     .container {
         // width: 95%;
+        // height: 500px;
         margin: 0 auto;
+        height: 663px;
 
         .row {
             padding-top: 40px;
@@ -117,7 +201,6 @@
                                 color: pink;
                                 font-size: 20px;
                             }
-
                         }
 
                         h5 {
@@ -170,8 +253,13 @@
             }
 
             .right {
+                // height: 400px;
+                text-align: center;
+
                 img {
-                    width: 100%;
+                    max-width: 100%;
+                    height: auto;
+                    vertical-align: middle;
                 }
             }
         }
@@ -313,28 +401,35 @@
 .Image {
     // position: relative;
     width: 100%;
-    .container { 
+    background-image: url('../images/bg2.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+
+    .container {
         margin: 0 auto;
-        img {
-            width: 100%;
-        }
+
         .row {
             div {
                 // position: absolute;
                 // left: 50px;
                 // top: 50px;
                 // width: 80%;
+                padding-top: 50px;
+
                 h3 {
                     color: white;
                     color: #786c5c;
                     font-family: 'Poppins', sans-serif;
                     font-weight: bold;
                 }
+
                 h2 {
                     color: white;
                     font-family: 'Poppins', sans-serif;
                     font-weight: bold;
                 }
+
                 p {
                     color: white;
                     word-spacing: 5px;
@@ -363,9 +458,6 @@
 //                 }
 //             }
 //         }
-
-
-
 
 //     }
 // }
