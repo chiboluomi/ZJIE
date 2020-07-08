@@ -39,6 +39,9 @@
     color: #a5a5a5 !important;
   }
 }
+.banner {
+  overflow: hidden;
+}
 .banner .carousel .carousel-indicators li {
   background-color: white !important;
   margin: 0 !important;
@@ -66,15 +69,125 @@
 .banner .carousel .carousel-indicators li.active span {
   background-color: #fff !important;
 }
+.banner .carousel .carousel-inner .item {
+  height: 733px;
+  background-size: cover;
+  background-position: center;
+}
+.banner .carousel .carousel-inner .item:nth-of-type(1) {
+  background-image: url("../images/2.jpg");
+}
+.banner .carousel .carousel-inner .item:nth-of-type(2) {
+  background-image: url("../images/1.jpg");
+}
+.banner .carousel .carousel-inner .item:nth-of-type(3) {
+  background-image: url("../images/4.jpg");
+}
+.banner .carousel .carousel-inner .item .container .row {
+  padding-top: 200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.banner .carousel .carousel-inner .item .container .row h5 {
+  text-align: right !important;
+  font-size: 24px;
+}
+.banner .carousel .carousel-inner .item .container .row h3 {
+  color: white;
+  text-align: right !important;
+  font-size: 56px;
+}
+.banner .carousel .carousel-inner .item .container .row a {
+  float: right;
+  padding: 12px 25px;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  border: 2px solid #fff;
+  background: #FC427B;
+}
+@media (min-width: 1200px) {
+  .banner {
+    height: 733px;
+  }
+  .banner .carousel .carousel-inner .item .container .row h5 {
+    font-size: 24px;
+  }
+  .banner .carousel .carousel-inner .item .container .row h3 {
+    font-size: 56px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .banner {
+    height: 600px;
+  }
+  .banner .carousel .carousel-inner .item {
+    height: 600px;
+  }
+  .banner .carousel .carousel-inner .item .container .row h5 {
+    font-size: 20px;
+  }
+  .banner .carousel .carousel-inner .item .container .row h3 {
+    font-size: 48px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .banner {
+    height: 530px;
+  }
+  .banner .carousel .carousel-inner .item {
+    height: 530px;
+  }
+  .banner .carousel .carousel-inner .item .container .row h5 {
+    font-size: 20px;
+  }
+  .banner .carousel .carousel-inner .item .container .row h3 {
+    font-size: 45px;
+  }
+}
+@media (max-width: 768px) {
+  .banner {
+    height: 500px;
+  }
+  .banner .carousel .carousel-inner .item {
+    height: 500px;
+  }
+  .banner .carousel .carousel-inner .item .container .row h5 {
+    font-size: 19px;
+  }
+  .banner .carousel .carousel-inner .item .container .row h3 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 360px) {
+  .banner {
+    height: 340px;
+  }
+  .banner .carousel .carousel-inner .item {
+    height: 340px;
+  }
+  .banner .carousel .carousel-inner .item .container .row {
+    padding-top: 60px;
+  }
+  .banner .carousel .carousel-inner .item .container .row h5 {
+    font-size: 16px;
+  }
+  .banner .carousel .carousel-inner .item .container .row h3 {
+    font-size: 29px;
+  }
+}
 .welcome {
   width: 100%;
 }
 .welcome .container {
   margin: 0 auto;
-  height: 663px;
 }
 .welcome .container .row {
   padding-top: 40px;
+  padding-bottom: 100px;
 }
 .welcome .container .row .left .p_one {
   color: #aaabad;
@@ -154,12 +267,13 @@
   color: #999999;
 }
 .welcome .container .row .right {
-  text-align: center;
+  text-align: right !important;
 }
 .welcome .container .row .right img {
   max-width: 100%;
   height: auto;
   vertical-align: middle;
+  border-style: none;
 }
 .eyes {
   width: 100%;
@@ -186,13 +300,54 @@
 }
 .eyes .container .row .center h3 {
   text-align: center;
-  margin: 20px 0px;
+  margin: 20px 8px;
   color: white;
 }
 .eyes .container .row .center p {
   text-align: center;
   word-spacing: 8px;
   color: white;
+  margin: 0px 8px;
+}
+@media (min-width: 1200px) {
+  .eyes .container .row .center h3 {
+    font-size: 24px;
+  }
+  .eyes .container .row .center p {
+    font-size: 15px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .eyes .container .row .center h3 {
+    font-size: 24px;
+  }
+  .eyes .container .row .center p {
+    font-size: 15px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .eyes .container .row .center h3 {
+    font-size: 24px;
+  }
+  .eyes .container .row .center p {
+    font-size: 13px;
+  }
+}
+@media (max-width: 768px) {
+  .eyes .container .row .center h3 {
+    font-size: 24px;
+  }
+  .eyes .container .row .center p {
+    font-size: 13px;
+  }
+}
+@media (min-width: 360px) {
+  .eyes .container .row .center h3 {
+    font-size: 24px;
+  }
+  .eyes .container .row .center p {
+    font-size: 13px;
+  }
 }
 .antium {
   width: 100%;
@@ -201,6 +356,7 @@
   margin: 0 auto;
 }
 .antium .container .title {
+  font-size: 28px;
   text-align: center;
   padding-top: 40px;
   padding-bottom: 10px;
@@ -209,7 +365,7 @@
   text-align: center;
   color: #999999;
   word-spacing: 4px;
-  font-size: 20px;
+  font-size: 15px;
   padding-bottom: 40px;
 }
 .antium .container .row .In {
@@ -262,6 +418,61 @@
   word-spacing: 5px;
   line-height: 26px;
   padding-bottom: 15px;
+}
+@media (max-width: 1200px) {
+  .antium {
+    width: 100%;
+  }
+  .antium .container {
+    margin: 0 auto;
+  }
+  .antium .container .title {
+    font-size: 28px;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 10px;
+  }
+  .antium .container .paragraph {
+    text-align: center;
+    color: #999999;
+    word-spacing: 4px;
+    font-size: 15px;
+    padding-bottom: 40px;
+  }
+  .antium .container .row .In {
+    padding-bottom: 10px;
+  }
+  .antium .container .row .In .image_position {
+    padding: 0;
+    position: relative;
+  }
+  .antium .container .row .In .image_position img {
+    width: 100%;
+  }
+  .antium .container .row .In .image_position .l_b {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 80px;
+    height: 70px;
+    background-color: #38d2fe;
+  }
+  .antium .container .row .In .image_position .l_b .top {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    height: 40px;
+    line-height: 50px;
+  }
+  .antium .container .row .In .image_position .l_b .bot {
+    color: white;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 15px;
+    height: 40px;
+    line-height: 11px;
+  }
 }
 .Image {
   width: 100%;
