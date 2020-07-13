@@ -1,0 +1,1051 @@
+.box {
+  margin: 0 auto;
+  width: 1199px;
+  height: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  align-items: center;
+}
+.box .inner {
+  margin-top: 30px;
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+.box .inner.one {
+  border: none;
+  background-image: url('../images/1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  background-size: cover;
+  position: relative;
+}
+.box .inner.one .mask1 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 10px solid rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+.box .inner.one .mask2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  border-radius: 50%;
+  transition: all 0.5s;
+  opacity: 0;
+}
+.box .inner.one .mask2 h3 {
+  font-family: "宋体";
+  margin: 0;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+}
+.box .inner.one .mask2 h3:nth-of-type(1) {
+  margin-top: 40px;
+}
+.box .inner.one .mask2 h3:nth-of-type(2) {
+  margin-bottom: 20px;
+}
+.box .inner.one .mask2 i {
+  display: block;
+  margin-top: 20px;
+  font-size: 12px;
+  color: #b4b4b4;
+  border-top: 2px solid #afa6aa;
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+}
+.box .inner.one:hover .mask2 {
+  opacity: 1;
+}
+.box .inner.two {
+  border: none;
+  position: relative;
+}
+.box .inner.two .mask1 {
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/2.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  background-size: cover;
+  position: relative;
+  transition: all 0.5s;
+}
+.box .inner.two .mask1 .inner_m {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 10px solid rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+.box .inner.two .mask2 {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #1a4a72;
+  box-sizing: border-box;
+  border-radius: 50%;
+  transition: all 0.5s;
+  transform: scale(0);
+}
+.box .inner.two .mask2 h3 {
+  font-family: "宋体";
+  margin: 0;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+}
+.box .inner.two .mask2 h3:nth-of-type(1) {
+  margin-top: 40px;
+}
+.box .inner.two .mask2 h3:nth-of-type(2) {
+  margin-bottom: 20px;
+}
+.box .inner.two .mask2 i {
+  display: block;
+  margin-top: 20px;
+  font-size: 12px;
+  color: #b4b4b4;
+  border-top: 2px solid #afa6aa;
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+}
+.box .inner.two:hover .mask1 {
+  transform: scale(0);
+}
+.box .inner.two:hover .mask2 {
+  transform: scale(1);
+}
+.box .inner.three {
+  border: none;
+  position: relative;
+}
+.box .inner.three .mask1 {
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/3.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  background-size: cover;
+  position: relative;
+  transition: all 0.5s;
+}
+.box .inner.three .mask1 .inner_m {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 10px solid rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+.box .inner.three .mask2 {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 0;
+  top: -2430px;
+  background-color: #1a4a72;
+  box-sizing: border-box;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+.box .inner.three .mask2 h3 {
+  font-family: "宋体";
+  margin: 0;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+}
+.box .inner.three .mask2 h3:nth-of-type(1) {
+  margin-top: 40px;
+}
+.box .inner.three .mask2 h3:nth-of-type(2) {
+  margin-bottom: 20px;
+}
+.box .inner.three .mask2 i {
+  display: block;
+  margin-top: 20px;
+  font-size: 12px;
+  color: #b4b4b4;
+  border-top: 2px solid #afa6aa;
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+}
+.box .inner.three:hover .mask1 {
+  transform: scale(0.5);
+  opacity: 0.5;
+}
+.box .inner.three:hover .mask2 {
+  top: 0;
+}
+.box .inner.four {
+  border: none;
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+.box .inner.four .mask1 {
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/4.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  background-size: cover;
+  position: relative;
+}
+.box .inner.four .mask1 .inner_m {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 10px solid rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+.box .inner.four .mask2 {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 243px;
+  top: 0;
+  background-color: #1a4a72;
+  box-sizing: border-box;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out 0.3s;
+  transform: scale(0.5);
+  opacity: 0;
+}
+.box .inner.four .mask2 h3 {
+  font-family: "宋体";
+  margin: 0;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+}
+.box .inner.four .mask2 h3:nth-of-type(1) {
+  margin-top: 40px;
+}
+.box .inner.four .mask2 h3:nth-of-type(2) {
+  margin-bottom: 20px;
+}
+.box .inner.four .mask2 i {
+  display: block;
+  margin-top: 20px;
+  font-size: 12px;
+  color: #b4b4b4;
+  border-top: 2px solid #afa6aa;
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+}
+.box .inner.four:hover .mask1 {
+  left: -200px;
+  transform: scale(0.5);
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+}
+.box .inner.four:hover .mask2 {
+  opacity: 1;
+  left: 0;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out 0.4s;
+}
+.box .inner.five {
+  border: none;
+  position: relative;
+}
+.box .inner.five .mask1 {
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/6.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  background-size: cover;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+.box .inner.five .mask1 .inner_m {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 10px solid rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+.box .inner.five .mask2 {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 0px;
+  top: 0;
+  background-color: #1a4a72;
+  box-sizing: border-box;
+  border-radius: 50%;
+  transform: scale(0);
+}
+.box .inner.five .mask2 h3 {
+  font-family: "宋体";
+  margin: 0;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+}
+.box .inner.five .mask2 h3:nth-of-type(1) {
+  margin-top: 40px;
+}
+.box .inner.five .mask2 h3:nth-of-type(2) {
+  margin-bottom: 20px;
+}
+.box .inner.five .mask2 i {
+  display: block;
+  margin-top: 20px;
+  font-size: 12px;
+  color: #b4b4b4;
+  border-top: 2px solid #afa6aa;
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+}
+.box .inner.five:hover .mask1 {
+  transform: translateX(100%) rotate(180deg);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.box .inner.five:hover .mask2 {
+  transform: scale(1);
+  transition: all 0.3s ease-in-out 0.3s;
+}
+.box .inner.six {
+  border: none;
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+.box .inner.six .mask1 {
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/7.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  background-size: cover;
+  position: relative;
+}
+.box .inner.six .mask1 .inner_m {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 10px solid rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+.box .inner.six .mask2 {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 0px;
+  top: 0;
+  background-color: #333333;
+  box-sizing: border-box;
+  border-radius: 50%;
+  transform: scale(0);
+}
+.box .inner.six .mask2 h3 {
+  font-family: "宋体";
+  margin: 0;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+}
+.box .inner.six .mask2 h3:nth-of-type(1) {
+  margin-top: 40px;
+}
+.box .inner.six .mask2 h3:nth-of-type(2) {
+  margin-bottom: 20px;
+}
+.box .inner.six .mask2 i {
+  display: block;
+  margin-top: 20px;
+  font-size: 12px;
+  color: #b4b4b4;
+  border-top: 2px solid #afa6aa;
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+}
+.box .inner.six:hover .mask1 {
+  transform: scale(0.5);
+  margin-top: 50px;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+}
+.box .inner.six:hover .mask2 {
+  transform: scale(1);
+  transition: all 0.3s ease-in-out 0.1s;
+}
+.box .inner.six:hover .mask2 h3:nth-of-type(1) {
+  margin-top: 8px;
+}
+.box .inner.six:hover .mask2 h3:nth-of-type(2) {
+  margin-bottom: 5px;
+}
+.box .inner.seven {
+  border: none;
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+.box .inner.seven .mask1 {
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/8.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  background-size: cover;
+  position: relative;
+  transform-origin: 50% 50%;
+  transform: translateZ(0) rotateY(0);
+}
+.box .inner.seven .mask1 .inner_m {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 10px solid rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+.box .inner.seven .mask2 {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 0px;
+  top: 0;
+  background-color: #333333;
+  box-sizing: border-box;
+  border-radius: 50%;
+  transform: translateZ(-1000px) rotateY(-90deg);
+}
+.box .inner.seven .mask2 h3 {
+  font-family: "宋体";
+  margin: 0;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+}
+.box .inner.seven .mask2 h3:nth-of-type(1) {
+  margin-top: 40px;
+}
+.box .inner.seven .mask2 h3:nth-of-type(2) {
+  margin-bottom: 20px;
+}
+.box .inner.seven .mask2 i {
+  display: block;
+  margin-top: 20px;
+  font-size: 12px;
+  color: #b4b4b4;
+  border-top: 2px solid #afa6aa;
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+}
+.box .inner.seven:hover .mask1 {
+  transform: translateZ(-500px) rotateY(90deg);
+  transition: all 0.3s ease-in-out;
+}
+.box .inner.seven:hover .mask2 {
+  transform: translateZ(0) rotateY(0);
+  transition: all 0.3s ease-in-out 0.3s;
+}
+.box .inner.eight {
+  border: none;
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+.box .inner.eight .mask1 {
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  background-size: cover;
+  position: relative;
+  transform-origin: 50% 50%;
+  transform: translateY(0) rotate(0);
+  transition: all 0.35s ease-in-out;
+  opacity: 1;
+}
+.box .inner.eight .mask1 .inner_m {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 10px solid rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+.box .inner.eight .mask2 {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 0px;
+  top: 0;
+  background-color: #333333;
+  box-sizing: border-box;
+  border-radius: 50%;
+  opacity: 0;
+  transform: translateY(100%) rotate(180deg);
+  transform-origin: 50% 50%;
+  transition: all 0.3s ease-in-out;
+}
+.box .inner.eight .mask2 h3 {
+  font-family: "宋体";
+  margin: 0;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+}
+.box .inner.eight .mask2 h3:nth-of-type(1) {
+  margin-top: 40px;
+}
+.box .inner.eight .mask2 h3:nth-of-type(2) {
+  margin-bottom: 20px;
+}
+.box .inner.eight .mask2 i {
+  display: block;
+  margin-top: 20px;
+  font-size: 12px;
+  color: #b4b4b4;
+  border-top: 2px solid #afa6aa;
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+}
+.box .inner.eight:hover .mask1 {
+  transform: translateY(100%) rotate(180deg);
+  transition: all 0.35s ease-in-out;
+  opacity: 0;
+}
+.box .inner.eight:hover .mask2 {
+  transform: translateY(0) rotate(0);
+  opacity: 1;
+  transition: all 0.35s ease-in-out 0.3s;
+}
+.box .inner.night {
+  border: none;
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+.box .inner.night .mask1 {
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/2.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  background-size: cover;
+  position: relative;
+}
+.box .inner.night .mask1 .inner_m {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 10px solid rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+.box .inner.night .mask2 {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 0px;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  border-radius: 50%;
+  transition: all 0.3 ease-in-out 0.2s;
+  background-color: transparent;
+}
+.box .inner.night .mask2 h3 {
+  font-family: "宋体";
+  margin: 0;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  transform: translateX(-100px);
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+}
+.box .inner.night .mask2 h3:nth-of-type(1) {
+  margin-top: 40px;
+}
+.box .inner.night .mask2 h3:nth-of-type(2) {
+  margin-bottom: 20px;
+}
+.box .inner.night .mask2 i {
+  display: block;
+  margin-top: 20px;
+  font-size: 12px;
+  color: #b4b4b4;
+  border-top: 2px solid #afa6aa;
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+  transform: translateX(100px);
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+}
+.box .inner.night:hover .mask2 {
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+.box .inner.night:hover .mask2 h3 {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 0.3s ease-in-out 0.2s;
+}
+.box .inner.night:hover .mask2 i {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 0.3s ease-in-out 0.2s;
+}
+.box .inner.ten {
+  border: none;
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+.box .inner.ten .mask1 {
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/3.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  background-size: cover;
+  position: relative;
+  transform-origin: top center;
+  transition: all 0.3s ease-in-out 0.3s;
+  opacity: 1;
+}
+.box .inner.ten .mask1 .inner_m {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 10px solid rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+.box .inner.ten .mask2 {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 0px;
+  top: 0;
+  background-color: #333333;
+  box-sizing: border-box;
+  border-radius: 50%;
+  transform: rotateX(90deg);
+  transition: all 0.3s ease-in-out;
+  transform-origin: bottom center !important;
+  opacity: 0;
+}
+.box .inner.ten .mask2 h3 {
+  font-family: "宋体";
+  margin: 0;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+}
+.box .inner.ten .mask2 h3:nth-of-type(1) {
+  margin-top: 40px;
+}
+.box .inner.ten .mask2 h3:nth-of-type(2) {
+  margin-bottom: 20px;
+}
+.box .inner.ten .mask2 i {
+  display: block;
+  margin-top: 20px;
+  font-size: 12px;
+  color: #b4b4b4;
+  border-top: 2px solid #afa6aa;
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+}
+.box .inner.ten:hover .mask1 {
+  transform: rotateX(90deg);
+  transition: all 0.3s ease-in-out;
+  transform-origin: top center !important;
+  opacity: 0;
+}
+.box .inner.ten:hover .mask2 {
+  transform: rotateX(0deg);
+  transition: all 0.3s ease-in-out 0.3s;
+  transform-origin: bottom center !important;
+  opacity: 1;
+}
+.box .inner.eleven {
+  border: none;
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+.box .inner.eleven .mask1 {
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/4.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  background-size: cover;
+  position: relative;
+  transform: scale(1) rotate(0);
+  opacity: 1;
+  transition: all 0.3s ease-in-out 0.3s;
+}
+.box .inner.eleven .mask1 .inner_m {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 10px solid rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+.box .inner.eleven .mask2 {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 0px;
+  top: 0;
+  background-color: #333333;
+  box-sizing: border-box;
+  border-radius: 50%;
+  transform: scale(0.5) rotate(-720deg);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.box .inner.eleven .mask2 h3 {
+  font-family: "宋体";
+  margin: 0;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+}
+.box .inner.eleven .mask2 h3:nth-of-type(1) {
+  margin-top: 40px;
+}
+.box .inner.eleven .mask2 h3:nth-of-type(2) {
+  margin-bottom: 20px;
+}
+.box .inner.eleven .mask2 i {
+  display: block;
+  margin-top: 20px;
+  font-size: 12px;
+  color: #b4b4b4;
+  border-top: 2px solid #afa6aa;
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+}
+.box .inner.eleven:hover .mask1 {
+  transform: scale(0.5) rotate(-720deg);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.box .inner.eleven:hover .mask2 {
+  transform: scale(1) rotate(0deg);
+  opacity: 1;
+  transition: all 0.3s ease-in-out 0.3s;
+}
+.box .inner.twelve {
+  border: none;
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+.box .inner.twelve .mask1 {
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/5.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  transform-origin: 2.5% 40% !important;
+  -ms-transform-origin: 2.5% 40% !important;
+  transition: all 0.3s ease-in-out;
+}
+.box .inner.twelve .mask1 .inner_m {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 10px solid rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+.box .inner.twelve .dot {
+  width: 4px;
+  height: 4px;
+  background-color: #000;
+  position: absolute;
+  border-radius: 50%;
+  left: 4px;
+  top: 80px;
+  z-index: 99;
+  transition: all 0.3s ease-in-out 0.3s;
+}
+.box .inner.twelve .mask2 {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 0px;
+  top: 0;
+  background-color: #333333;
+  box-sizing: border-box;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+.box .inner.twelve .mask2 h3 {
+  font-family: "宋体";
+  margin: 0;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+}
+.box .inner.twelve .mask2 h3:nth-of-type(1) {
+  margin-top: 40px;
+}
+.box .inner.twelve .mask2 h3:nth-of-type(2) {
+  margin-bottom: 20px;
+}
+.box .inner.twelve .mask2 i {
+  display: block;
+  margin-top: 20px;
+  font-size: 12px;
+  color: #b4b4b4;
+  border-top: 2px solid #afa6aa;
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+}
+.box .inner.twelve:hover .mask1 {
+  transform-origin: 3% 40% !important;
+  -ms-transform-origin: 3% 40% !important;
+  transform: rotate(90deg);
+  transition: all 0.3s ease-in-out;
+}
+.box .inner.twelve:hover .dot {
+  width: 6px;
+  height: 6px;
+  left: 1px;
+  top: 80px;
+  transition: all 0.3s ease-in-out;
+}
+.box .inner.thirteen {
+  border: none;
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 100px;
+}
+.box .inner.thirteen .mask1 {
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/7.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  background-size: cover;
+  position: relative;
+  opacity: 1;
+}
+.box .inner.thirteen .mask1 .inner_m {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 10px solid rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+.box .inner.thirteen .mask1::before {
+  content: " ";
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.box .inner.thirteen .mask2 {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 0px;
+  top: 0;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background-color: transparent;
+  transform: scale(0);
+  transition: all 0.3s ease-in-out;
+}
+.box .inner.thirteen .mask2 h3 {
+  font-family: "宋体";
+  margin: 0;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  transition: all 0.3s ease-in-out;
+}
+.box .inner.thirteen .mask2 h3:nth-of-type(1) {
+  margin-top: 40px;
+}
+.box .inner.thirteen .mask2 h3:nth-of-type(2) {
+  margin-bottom: 20px;
+}
+.box .inner.thirteen .mask2 i {
+  display: block;
+  margin-top: 20px;
+  font-size: 12px;
+  color: #b4b4b4;
+  border-top: 2px solid #afa6aa;
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+.box .inner.thirteen:hover .mask1::before {
+  opacity: 1;
+}
+.box .inner.thirteen:hover .mask2 {
+  transform: scale(1);
+}
+.box .inner.thirteen:hover .mask2 h3 {
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+.box .inner.thirteen:hover .mask2 i {
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+.box .inner.fourteen {
+  border: none;
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+.box .inner.fourteen .mask1 {
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/8.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  transition: all 0.5s ease-in-out;
+  transform-origin: right center;
+  transform: rotateX(0deg);
+}
+.box .inner.fourteen .mask1 .inner_m {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 10px solid rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+.box .inner.fourteen .mask2 {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 0px;
+  top: 0;
+  background-color: #333333;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+.box .inner.fourteen .mask2 h3 {
+  font-family: "宋体";
+  margin: 0;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+}
+.box .inner.fourteen .mask2 h3:nth-of-type(1) {
+  margin-top: 40px;
+}
+.box .inner.fourteen .mask2 h3:nth-of-type(2) {
+  margin-bottom: 20px;
+}
+.box .inner.fourteen .mask2 i {
+  display: block;
+  margin-top: 20px;
+  font-size: 12px;
+  color: #b4b4b4;
+  border-top: 2px solid #afa6aa;
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+}
+.box .inner.fourteen:hover .mask1 {
+  transform: rotateY(180deg);
+  transition: all 0.5s ease-in-out;
+}
