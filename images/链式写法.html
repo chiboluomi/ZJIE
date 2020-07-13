@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+       .stage{
+           width: 200px;
+           height: 200px;
+           background-color:pink;
+       }
+       .content{
+           width: 100px;
+           height: 100px;
+
+           background-color:skyblue;
+       }
+
+   </style>
+</head>
+<body>
+    <div class="stage">
+        bigbox
+        <div class="content">
+            smallbox
+        </div>
+    </div>
+    
+
+
+
+    <script src="https://cdn.staticfile.org/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        //  $('.stage').css('background','skyblue').text('bigbigbigbigbig');???小盒子的字不见了？？
+         $('.content').css('background','pink').text('smallsmallsmall');
+
+
+
+         $('.stage').mouseover(function(){
+            $(this).css('background','pink').text('smallsmallsmall');
+         }).mouseout(function(){
+            $(this).css('background','skyblue').text('bigbigbigbigbig');
+         })
+
+
+         
+
+    </script>
+</body>
+</html>
