@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            position: relative;
+        }
+        .stage,
+        li {
+            box-sizing: border-box;
+        }
+
+        .stage {
+            width: 400px;
+            height: 400px;
+            margin: 0 auto;
+            background-color: skyblue;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .stage li {
+            list-style: none;
+            position: absolute;
+            left: 0;
+            top: 0;
+            transition: all 0.5s;
+            background-image: url('./xiamu.jpg');
+            border: 1px solid white;
+            border-radius: 5px;
+            /* background-size: 400% auto; */
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            background-color: orange;
+            top: 100px;
+            left: 50%;
+            margin-left: -100px;
+            transition: all 1s;
+            transform: scale(0);
+            opacity:0;
+        }
+        p{
+            font-size:12px;
+            text-align: center;
+            vertical-align: middle;
+            margin-top:85px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="stage"></ul>
+    <button onclick="shuffle()">洗牌</button>
+    <button class="start">开始拼图</button>
+    <button class="stop">结束拼图</button>
+    <div class="box">
+        <p>恭喜你，拼图成功！用时<span></span>秒!</p>
+    </div>
+
+    <script>
+        // 生成li
+        var size = 2;
+        var stage = document.querySelector('.stage');
+        for (var i = 0; i < size * size; i++) {
+            var node = document.createElement('li');
+            node.style.width = 100 / size + '%';
+            node.style.height = 100 / size + '%';
+            node.style.backgroundColor = 'pink';
+            // 判断node的left  top
+            node.style.left = (i % size) * (100 / size) + '%';
+            node.style.top = Math.floor((i / size)) * (100 / size) + '%';
+            node.style.backgroundPosition = (i % size) * -100 + '%' + Math.floor((i / size)) * -100 + '%';
+            node.style.backgroundSize = size * 100 + '%' + ' auto';
+            node.draggable = "true";
+            node.id = 'card' + i;
+            stage.appendChild(node);
+        }
+        var lis = document.querySelectorAll('li');
+
+        function random() {
+            return Math.floor(Math.random() * size * size);
+        }
+        // 洗牌函数
+        function shuffle() {
+            var arr = [];
+            for (var i = 0; i < size * size; i++) {
+                arr.push(i);
+            }
+            var temp = [];
+            for (var i = 0; i < size * size; i++) {
+                temp.push(arr.splice(Math.floor(Math.random() * arr.length), 1)[0])
+            }
+            lis.forEach(function (element, index) {
+                element.style.left = (temp[index] % size) * (100 / size) + '%';
+                element.style.top = Math.floor((temp[index] / size)) * (100 / size) + '%';
+
+            })
+        }
+        // shuffle();
+
+        // 循环监听鼠标拖拽事件
+        lis.forEach(function (element, index) {
+            element.ondragstart = function (event) {
+                event.dataTransfer.setData("Text", event.target.id);
+            }
+            element.ondragover = function (event) {
+                event.preventDefault();
+            }
+            element.ondrop = function (event) {
+                var e1 = event.target;
+                var e2 = document.getElementById(event.dataTransfer.getData("Text"));
+                var card1 = {
+                    left: e1.style.left,
+                    top: e1.style.top
+                }
+                e1.style.left = e2.style.left;
+                e1.style.top = e2.style.top;
+                e2.style.left = card1.left;
+                e2.style.top = card1.top;
+                var check = Array.prototype.every.call(lis, function (element, index, lis) {
+                    return parseInt(element.style.left) == parseInt((index % size) * (100 / size) +
+                            '%') &&
+                        parseInt(element.style.top) == parseInt(Math.floor((index / size)) * (100 /
+                                size) +
+                            '%');
+                })
+                if (check) {
+                    stop.onclick();
+                    box.style.transform='scale(1)';
+                    box.style.opacity='1';
+                }else{
+                    box.style.transform='scale(0)';
+                    box.style.opacity='0';
+                }
+            }
+        })
+        // 计时功能
+        var box =document.querySelector('.box');
+        var w;
+        var stop = document.querySelector('.stop');
+        var start = document.querySelector('.start')
+        start.onclick = function () {
+            if (typeof (Worker) !== "undefined") {
+                if (typeof (w) == "undefined") {
+                    w = new Worker('./demo_workers.js');
+                }
+
+                w.onmessage = function (event) {
+                    document.querySelector('span').innerText = event.data;
+                }
+                console.log('开始工作')
+
+            } else {
+                console.log('你的浏览器不支持web worker')
+            }
+        }
+        stop.onclick = function () {
+            w.terminate();
+            console.log('停止后台工作');
+            w = undefined;
+        }
+    </script>
+</body>
+
+</html>
