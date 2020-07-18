@@ -1,0 +1,55 @@
+.part1 {
+  width: 100%;
+}
+.part1 .title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.part1 .container {
+  width: 100%;
+  margin: 0 auto;
+}
+.part1 .container .row {
+  margin: 0 auto;
+}
+.part1 .container .row div {
+  text-align: center;
+}
+.part1 .container .row div a {
+  display: inline-block;
+  margin-top: 30px;
+  box-shadow: 2px 2px 16px #333;
+  transition: all 0.5s;
+}
+.part1 .container .row div a:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+  box-shadow: 2px 2px 20px #333;
+}
+@media (max-width: 992px) {
+  .part1 .container .row div a img {
+    height: 300px;
+  }
+}
+.part2 .title {
+  text-align: center;
+}
+.part2 .container .row div a {
+  display: inline-block;
+  box-shadow: 2px 2px 16px #333;
+  transition: all 0.5s;
+}
+.part2 .container .row div a:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+  box-shadow: 2px 2px 20px #333;
+}
+.part2 .container .row div:nth-of-type(1) a img {
+  width: 100%;
+}
+.part2 .container .row div:nth-of-type(2) a {
+  margin-top: 100px;
+}
+.part2 .container .row div:nth-of-type(2) a img {
+  width: 100%;
+}

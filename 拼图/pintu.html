@@ -55,6 +55,9 @@
             vertical-align: middle;
             margin-top:85px;
         }
+        /* .stop{
+            visibility: hidden;
+        } */
     </style>
 </head>
 
@@ -62,14 +65,14 @@
     <ul class="stage"></ul>
     <button onclick="shuffle()">洗牌</button>
     <button class="start">开始拼图</button>
-    <button class="stop">结束拼图</button>
+    <button class="stop" >结束拼图</button>
     <div class="box">
         <p>恭喜你，拼图成功！用时<span></span>秒!</p>
     </div>
 
     <script>
         // 生成li
-        var size = 2;
+        var size = 5;
         var stage = document.querySelector('.stage');
         for (var i = 0; i < size * size; i++) {
             var node = document.createElement('li');

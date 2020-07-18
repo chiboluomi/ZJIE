@@ -1,8 +1,0 @@
-<<<<<<< HEAD
-
-hello world
-Creating a new branch is quick & simple!
-=======
-hello world!
-we should study hard!
->>>>>>> 435e6d8e1d2ea326eedde715c06f873ff1ddefe1
