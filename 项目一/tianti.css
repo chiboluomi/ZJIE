@@ -58,8 +58,23 @@ body .v-header {
   background-image: url('images/carousel-ct.png');
   background-size: cover;
   background-repeat: no-repeat;
-  padding-bottom: 200px;
+  padding-bottom: 100px;
   position: relative;
+}
+@media (max-width: 360px) {
+  body .v-header {
+    height: 450px ;
+  }
+}
+@media (max-width: 760px) and (min-width: 360px) {
+  body .v-header {
+    height: 500px;
+  }
+}
+@media (max-width: 992px) and (min-width: 760px) {
+  body .v-header {
+    height: 600px;
+  }
 }
 body .v-header .container2 {
   width: 85%;
@@ -67,8 +82,7 @@ body .v-header .container2 {
 }
 body .v-header .container2 .row .bot {
   padding: 0;
-  padding-top: 200px;
-  float: left;
+  padding-top: 30px;
   height: 100%;
   width: 50%;
 }

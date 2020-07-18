@@ -182,18 +182,47 @@
 .welcome {
   width: 100%;
 }
+@media (max-width: 440px) {
+  .welcome .p_one {
+    font-size: 28px;
+  }
+}
+@media (max-width: 736px) {
+  .welcome .p_one {
+    font-size: 34px;
+  }
+}
+@media (max-width: 991px) {
+  .welcome .p_one {
+    font-size: 38px;
+  }
+}
+@media (max-width: 1080px) {
+  .welcome .p_one {
+    font-size: 35px;
+  }
+}
+@media (min-width: 992px) {
+  .welcome .right {
+    text-align: right !important;
+  }
+}
 .welcome .container {
   margin: 0 auto;
 }
 .welcome .container .row {
   padding-top: 40px;
+}
+.welcome .container .row .left {
   padding-bottom: 100px;
 }
 .welcome .container .row .left .p_one {
+  width: 100%;
   color: #aaabad;
-  font-size: 50px;
-  font-weight: lighter;
-  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  letter-spacing: 1px;
+  font-weight: 100;
+  text-shadow: 2px 5px 3px rgba(0, 0, 0, 0.06);
 }
 .welcome .container .row .left .p_two {
   width: 70%;
@@ -211,6 +240,7 @@
 .welcome .container .row .left .bot .b_l {
   height: 200px;
   width: 40%;
+  padding-top: 50px;
   position: absolute;
   left: 0;
   top: 0;
@@ -240,6 +270,7 @@
 .welcome .container .row .left .bot .b_r {
   height: 200px;
   width: 40%;
+  padding-top: 50px;
   position: absolute;
   right: 0;
   top: 0;
@@ -267,7 +298,7 @@
   color: #999999;
 }
 .welcome .container .row .right {
-  text-align: right !important;
+  text-align: center !important;
 }
 .welcome .container .row .right img {
   max-width: 100%;
@@ -479,7 +510,37 @@
   background-image: url('../images/bg2.jpg');
   background-size: cover;
   background-position: center;
-  min-height: 500px;
+  height: 560px;
+}
+@media (max-width: 480px) {
+  .Image {
+    height: 300px !important;
+  }
+}
+@media (max-width: 768px) and (min-width: 480px) {
+  .Image {
+    height: 350px !important;
+  }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  .Image {
+    height: 420px !important;
+  }
+}
+@media (max-width: 1080px) and (min-width: 992px) {
+  .Image {
+    height: 500px !important;
+  }
+}
+@media (max-width: 1280px) and (min-width: 1080px) {
+  .Image {
+    height: 530px !important;
+  }
+}
+@media (max-width: 1366px) and (min-width: 1280px) {
+  .Image {
+    height: 560px !important;
+  }
 }
 .Image .container {
   margin: 0 auto;

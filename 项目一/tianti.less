@@ -19,7 +19,6 @@
                 border: none;
                 background-color: #48609e;
                 overflow: hidden;
-
                 // position: fixed;
                 .container {
                     position: relative;
@@ -73,21 +72,30 @@
             // height: 600px;
             // background-color: #48609e;
             background-image: url('./images/carousel-ct.png');
-            background-size: cover;
+            background-size:cover;
             background-repeat: no-repeat;
             // padding: 100px 0px;
-            padding-bottom: 200px;
+            padding-bottom: 100px;
             position: relative;
+            @media (max-width:360px) {
+                height:450px ;
+                
+            }
+            @media (max-width:760px)and(min-width:360px) {
+                height:500px;
+            }
+            @media (max-width:992px)and(min-width:760px) {
+                height:600px;
+            }
             .container2 {
                 width: 85%;
                 margin: 0 auto;
-
-
+    
                 .row {
                     .bot {
                         padding: 0;
-                        padding-top: 200px;
-                        float: left;
+                        padding-top:30px;
+                        // float: left;
                         height: 100%;
                         width: 50%;
 
