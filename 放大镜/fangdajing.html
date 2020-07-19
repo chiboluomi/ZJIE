@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        ul{
+            float:left;
+            margin-right: 30px;
+        }
+        ul li{
+            list-style: none;
+            height: 100px;
+            width: 100px;
+            background-size:100%;
+            margin-bottom: 25px;
+            box-sizing: border-box;
+    
+        }
+        li:nth-child(1){
+            background-image: url('./images/0001.png');
+        }
+        li:nth-child(2){
+            background-image: url('./images/0002.png');
+        }
+        li:nth-child(3){
+            background-image: url('./images/0003.png');
+        }
+        li:nth-child(4){
+            background-image: url('./images/0004.png');
+        }
+        li:nth-child(5){
+            background-image: url('./images/0005.png');
+        }
+    
+        li:active{
+            border:2px solid yellow;
+        }
+
+        .original{
+            /* width: 600px; */
+            /* height: 600px;   */
+            position: relative;
+            float:left;
+            
+        }
+        .original img{
+            width:100%;
+        }
+        .mask{
+            /* width: 300px; */
+            /* height: 300px; */
+            background-color: rgba(243, 245, 139, 0.3);
+            position: absolute;
+            top: 0;
+            left: 0;
+            
+        }
+        .big{
+            width: 600px;
+            height: 600px;
+            float:left;
+            margin-left: 30px;
+            /* border:2px solid black; */
+            background-image: url('./images/0001.png');
+            background-size:200% auto;
+            background-repeat: no-repeat;
+        }
+        button{
+            width: 100px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="stage">
+        <ul class="small">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+
+        <div class="original">
+            <img src="./images/0001.png" alt="">
+            <div class = "mask"></div>
+        </div>
+        
+        <div class="big"></div>
+        <div style="clear:both;"></div>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+    </div>
+    
+    <script>
+        var arr = ['./images/0001.png','./images/0002.png','./images/0003.png','./images/0004.png','./images/0005.png']
+        var stage = document.getElementsByClassName("stage")[0];
+        var original = document.getElementsByClassName("original")[0];
+        var img = document.getElementsByTagName("img")[0];
+        var mask = document.getElementsByClassName("mask")[0];
+        var big = document.getElementsByClassName("big")[0];
+        var lis = document.getElementsByTagName("li");
+        var btns = document.getElementsByTagName("button");
+
+         var level = 3;
+        var originalW = 600;
+        var originalH = 600;
+        var bigH = 600;
+        var bigW = 600;
+        original.style.width = originalW +'px';
+        original.style.height = originalH +'px';
+        var maskW = originalW/level ;
+        var maskH= originalH/level;
+        mask.style.width = maskW +'px';
+        mask.style.height = maskH +'px';
+        big.style.backgroundSize = level +'00%'+' '+'auto';
+
+//鼠标移上original范围内时
+//当按钮被点击改变相关样式和放大倍数
+        for(var k=0;k<btns.length;k++){
+            btns[k].onclick = function(){
+                console.log(this.innerText);
+                level = Number(this.innerText);
+                console.log(level);
+                maskW = originalW/level ;
+                maskH= originalH/level;
+                mask.style.width = maskW +'px';
+                mask.style.height = maskH +'px';
+                big.style.backgroundSize = level +'00%'+' '+'auto';
+
+
+
+            };
+        }
+
+
+
+        function showCurrent(index){
+            for(var i=0;i<arr.length;i++){
+                if(i==index){
+                    lis[i].className = 'active';
+                    img.src = arr[i];
+                    big.style.backgroundImage = 'url('+arr[i]+')';
+                }else{
+                    lis[i].className = 'none';
+                }
+            }
+        }
+        showCurrent();
+        for(var j=0;j<lis.length;j++){
+            lis[j].index = j;
+            lis[j].onclick = function(){
+                // img.src = arr[this];
+                showCurrent(this.index);
+            }
+        }
+
+        original.onmousemove = function(event){
+            var x = event.pageX-130;
+            var y = event.pageY;
+            // console.log(x, y);
+
+            if(x<=maskW/2)x=maskW/2;
+            if(x>=originalW-maskW/2)x=originalW-maskW/2;
+            if(y<=maskH/2)y=maskH/2;
+            if(y>=originalH-maskH/2)y=originalH-maskH/2;
+            console.log(x,y);
+
+            mask.style.left = (x-maskW/2)+'px';
+            mask.style.top = (y-maskH/2)+'px';
+
+            big.style.backgroundPositionX = -(x-maskW/2)*bigW/maskW+'px';
+            big.style.backgroundPositionY = -(y-maskH/2)*bigH/maskH+'px';
+
+        }
+        original.onmouseover = function(){
+            mask.style.display = 'block';
+            big.style.display = 'block';
+        }
+        original.onmouseout = function(){
+            mask.style.display = 'none';
+            big.style.display = 'none';
+        }
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                overflow: hidden;
+                width: 500px;
+                background: red;
+                position: relative;
+            }
+            ul li {
+                /* float: left; */
+                width: 200px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                transition: all 0.5s;
+            }
+            ul li img {
+                width: 100%;
+                display: block;
+            }
+            ul li:nth-of-type(1) {
+                position: relative;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <ul class="stage">
+            <li><img src="./images/datouwang1.jpg" alt="" /></li>
+            <li><img src="./images/datouwang2.jpg" alt="" /></li>
+            <li><img src="./images/datouwang3.jpg" alt="" /></li>
+            <li><img src="./images/datouwang4.jpg" alt="" /></li>
+            <li><img src="./images/datouwang5.jpg" alt="" /></li>
+        </ul>
+
+        <script>
+            
+            var lis = document.getElementsByTagName("li");
+
+            
+            function activeIndex(current) {
+                console.log(current);
+
+                for (var i = 0; i < lis.length; i++) {
+                    if (i <= current) {
+                        // 处理前面的 
+                        lis[i].style.left = i * (300 / 4) + "px";
+                    } else {
+                        // 处理后面的
+                        
+                        lis[i].style.left = 200 + (i - 1) * (300 / 4) + "px";
+                    }
+                }
+            }
+
+            activeIndex(0);
+
+            for (var i = 0; i < lis.length; i++) {
+                lis[i].index = i;
+                lis[i].onclick = function () {
+                    activeIndex(this.index);
+                };
+            }
+
+          
+        </script>
+        
+    </body>
+</html>
