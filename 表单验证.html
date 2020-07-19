@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label {
+            display: block;
+        }
+
+        label span {
+            width: 100px;
+            display: inline-block;
+        }
+
+        label input {
+            transition: all 0.3s;
+            border: 1px solid black;
+            outline: none;
+            border-radius: 5px;
+        }
+
+        label input.active {
+            border-color: red;
+            width: 250px;
+        }
+
+
+        label i.success {
+            color: green;
+        }
+
+        label i.error {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <form action='' method="get">
+        <label>
+            <span>姓名:</span>
+            <input type="text" name="username">
+            <i>长度1~12个字符</i>
+        </label>
+        <label>
+            <span>密码:</span>
+            <input type="text" name="password">
+            <i>密码必须由字母和数字组成</i>
+        </label>
+
+        <label>
+            <span>确认密码:</span>
+            <input type="text" name="repassword">
+            <i>两次密码需要相同</i>
+        </label>
+        <label>
+            <span>电子邮箱:</span>
+            <input type="email" name="email">
+            <i></i>
+        </label>
+    </form>
+
+    <input type="submit" value="提交">
+    <input type="reset" value="重置">
+    <script>
+        var ipnt = document.getElementsByName('username').item(0).onblur = function () {
+            console.log(this.value);
+            if (this.value.length <= 12 && this.value.length > 1) {
+                this.nextElementSibling.innerText = "输入正确";
+                this.nextElementSibling.className = "success";
+            } else {
+                // this.nextElementSibling.innerText="输入错误";
+                this.nextElementSibling.className = "error";
+            }
+        }
+        var password = /\w{8,16}/;
+        var pass = document.getElementsByName('password').item(0).onblur = function () {
+            console.log(this.value);
+            if (this.value.match(password)) {
+                this.nextElementSibling.innerText = "输入正确";
+                this.nextElementSibling.className = "success";
+            } else {
+                this.nextElementSibling.className = "error";
+            }
+        }
+        var repass = document.getElementsByName('repassword').item(0).onblur = function () {
+            if (this.value.match(password)) {
+                if(this.value==document.getElementsByName('password').item(0).value){
+                this.nextElementSibling.innerText = "密码设置成功";
+                this.nextElementSibling.className = "success";
+                }
+                else{
+                    this.nextElementSibling.className = "error";
+                }
+                
+            }else{
+                this.nextElementSibling.innerText = "输入错误";
+                this.nextElementSibling.className = "error";
+            }
+        }
+        var pattEmail = /^\w+(\.|-)?\w+@\w+-?\w+(\.[A-z]{2,}){1,2}$/i;
+        var email = document.getElementsByName('email').item(0).onblur = function () {
+            console.log(this.value);
+            if (this.value.match(pattEmail)) {
+                this.nextElementSibling.innerText = "输入正确";
+                this.nextElementSibling.className = "success";
+            } else {
+                this.nextElementSibling.innerText = "输入错误";
+                this.nextElementSibling.className = "error";
+            }
+        }
+    </script>
+</body>
+
+</html>

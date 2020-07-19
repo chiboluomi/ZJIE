@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .stage{
+            width: 250px;
+            height: 400px;
+            background-color:red;
+            margin-left: 50%;
+            text-align: center;
+            padding-top: 50px;
+            box-sizing: border-box;
+            position: absolute;
+        }
+    
+        h1{
+            color:white;
+        }
+        .count{
+            color:white;
+            opacity: 0.8;
+            font-size: 30px;
+        }
+        .text{
+            color:white;
+            margin-top: 80px;
+            font-size: 20px;
+        }
+       
+        .three span{
+            display:inline-block;
+            margin-top: 50px;
+            height: 60px;
+            width: 60px;
+            background-color:#2f3430;
+            color:white;
+            font-size: 25px;
+            font-weight: bold;
+            line-height: 50px;
+        }
+        .sline{
+            width: 100%;
+            height: 1px;
+            background-color:red;
+            position: relative;
+            left: 0;
+            bottom: 38px;
+           
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class ="stage">
+        <h1>倒计时</h1>
+        <p class="count">COUNT DOWN</p>
+        <p class="text">距离结束还剩</p>
+        <p class="three">
+            <span class="hour">00</span>
+            <span class="min">00</span>
+            <span clas="miao">00</span>
+            <p class="sline"></p>
+        </p>
+        
+        
+
+    </div>
+    <script>
+        var spans = document.getElementsByTagName("span");
+
+
+        var d = new Date();//创建一个Date对象
+        d.setHours(d.getHours()+12);//设置倒计时十二小时
+        //补零
+        function zero(n) {
+				 	if (n > 0) {
+				 		return n < 10 ? '0' + n : n;
+				 	} else {
+				 		return n;
+				 	}
+				 }
+        setInterval(function(){
+            var time = d- new Date();//减去当前的时间
+            // console.log(time);
+            time = Math.floor(time/1000);
+            var h = Math.floor(time/(60*60));
+            var f = Math.floor(time%(60*60)/60);
+            var m = time%60;
+            //调用函数  满足条件是补零
+            h=zero(h);
+            f=zero(f);
+            m=zero(m);
+
+            spans[0].innerText = h;
+            spans[1].innerText = f;
+            spans[2].innerText = m;
+            
+
+
+
+        },500);
+        
+				 
+    </script>
+</body>
+</html>
