@@ -2,7 +2,8 @@
     padding: 0;
     margin: 0;
 }
-.row{
+
+.row {
     margin: 0 !important;
 }
 
@@ -12,71 +13,255 @@ body {
     .header {
         width: 100%;
         background-color: #222222;
-        overflow: hidden;
 
-        .navbar {
-            height: 100px;
-            width: 90%;
-            margin: 0 auto;
-            background-color: #222222;
-            border: none;
-            position: relative;
+        @media(max-width:992px) {
+            .container {
+                .row {
+                    .Center {
+                        .brand {
+                            left: 50% !important;
+                            margin-left: -72px !important;
 
-            .container-fluid {
-                .navbar-header {
-                    height: 100px;
+                            img {}
+                        }
 
-                    .collapsed {
-                        display: none;
-                    }
+                        .center {
+                            display: none;
+                        }
 
-                    .navbar-brand {
-                        height: 100px;
+                        .right {
+                            a {
+                                span {
+                                    display: none !important;
+                                }
+                            }
 
-                        // position: relative;
-                        img {
-                            position: absolute;
-                            left: 0;
-                            top: 0;
+                        }
+
+                        .button {
+                            display: block !important;
                         }
                     }
                 }
+            }
+        }
 
-                .collapse {
-                    .navbar-nav {
-                        margin-left: 126px;
-                        margin-top: 53px;
 
-                        li {
-                            a {
-                                &:hover {
-                                    color: #009d86;
+        .container {
+            height: 100px;
+
+            .row {
+                width: 100%;
+                height: 100%;
+
+                .Center {
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+
+                    .brand {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+
+                        img {
+                            width: 145px;
+                            height: 100px;
+                        }
+                    }
+
+
+                    .center {
+                        position: absolute;
+                        top: 65px;
+                        left: 20%;
+
+                        ul {
+                            li {
+                                list-style: none;
+                                float: left;
+
+                                a {
+                                    display: inline-block;
+                                    padding: 0px 15px;
+                                    color: #777777;
+                                    font-weight: bold;
+                                    font-size: 13px;
+                                    letter-spacing: 1px;
+                                    text-transform: uppercase;
+                                    font-family: 'Raleway', sans-serif;
+                                    text-decoration: none;
+
+                                    &:hover {
+                                        color: #009d86;
+                                    }
                                 }
                             }
                         }
                     }
 
-                    .navbar-right {
-                        text-align: center;
-                        margin: 0;
-                        margin-top: 15px;
+                    .right {
+                        position: absolute;
+                        top: 30px;
+                        right: 0;
+                        // width: 100px;
 
-                        span {
-                            font-size: 25px;
+                        a {
+                            display: inline-block;
+                            text-decoration: none;
 
-                            &.icons {
+                            .one {
+                                display: inline-block;
+                                font-family: 'Glyphicons Halflings';
+                                font-style: normal;
+                                font-weight: 400;
                                 color: #969696;
+                                font-size: 24px;
+
                             }
 
-                            color:#969696;
-                        }
+                            span {
+                                display: inline-block;
+                                line-height: 24px;
+                                font-family: 'Glyphicons Halflings';
+                                font-style: normal;
+                                font-weight: 400;
+                                color: #969696;
+                                font-size: 20px;
+                            }
 
+                            &:hover {
+                                color: #009d86;
+                            }
+                        }
+                    }
+
+                    .button {
+                        display: none;
+                        position: absolute;
+                        top: 50%;
+                        margin-top: -9px;
+                        left: 0;
+
+                        span {
+                            display: block;
+                            width: 20px;
+                            height: 3px;
+                            margin-top: 3px;
+                            background-color: #cccccc;
+                        }
                     }
                 }
 
             }
         }
     }
+
+    // 鼠标指上显示该模块
+    .hover_down1 {
+        display: none;
+        @media (max-width:992px) {
+            display: none;
+        }
+        position: absolute;
+        top: 100px;
+        left: 50%;
+        margin-left:-485px;
+        z-index: 1;
+        box-sizing: border-box;
+        width: 970px;
+        .container {
+            width: 100%;
+            .row1 {
+                width: 100%;
+                margin: 0 auto;
+                border-top:5px solid #009d86;
+                .center {
+                    display: flex;
+                    dl {
+                        flex: 1;
+                        border-left:1px solid #1b1b1b;
+                        box-sizing: border-box;
+                        background-color:rgba(0,0,0,0.3);
+                        padding-bottom: 30px;
+                        &:nth-of-type(1){
+                            border: none;
+                        }
+                        &:hover{
+                            background-color:rgba(0,0,0,0.7);
+                        }
+                        dt {
+                            margin-top: 20px;
+                            margin-left: 10px;
+                            padding:6px 0px;
+                            a {
+                                text-decoration: none;
+                                color: #bbbbbb;
+                                font-size: 14px !important;
+                                &:hover{
+                                    color:#dddddd;
+                                }
+                            }
+
+                        }
+
+                        dd {
+                            margin-left: 10px;
+                            padding:5px 0px;
+                            a {
+                                display: inline-block;
+                                text-decoration: none;
+                                color: #999999;
+                                font-size: 12px;
+                                transition: all 0.5s;
+                                transform: translate(0px) scale(1);
+                                &:hover{
+                                    color:#ffffff;
+                                    transform:translate(7px) scale(1);
+                                    transition: all 0.5s;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .down {
+        width: 100%;
+        background-color: #222222;
+
+        .container {
+            .row {
+                ul {
+                    li {
+                        list-style: none;
+                        padding: 15px 0px;
+                        border-bottom: 1px solid #333333;
+
+                        a {
+                            display: inline-block;
+                            color: #777777;
+                            font-weight: bold;
+                            font-size: 13px;
+                            letter-spacing: 1px;
+                            text-transform: uppercase;
+                            font-family: 'Raleway', sans-serif;
+                            text-decoration: none;
+
+                            &:hover {
+                                color: #009d86;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
 
     .lunbo {
         .carousel {
@@ -96,9 +281,13 @@ body {
 
             .carousel-inner {
                 .item {
-                    img {
-                        // opacity: 0;
+
+                    // opacity: 0;
+                    &:nth-of-type(1) {
+                        // opacity: 1;
                     }
+
+                    img {}
                 }
             }
 
@@ -106,74 +295,32 @@ body {
 
     }
 
-    @media(max-width:992px) {
-        .header {
-            .navbar {
-                position: relative;
-
-                .container-fluid {
-                    .navbar-header {
-                        .collapsed {
-                            display: block;
-                            width: 20px;
-                            height: 20px;
-                            position: absolute;
-                            left: 0;
-                            top: 50%;
-                            margin-top: -10px;
-
-                            span {
-                                display: block;
-                                margin: 0;
-                                width: 20px;
-                                height: 3px;
-                                background-color: #cccccc;
-                                margin-top: 2px;
-                            }
-                        }
-
-                        .navbar-brand {
-                            position: absolute;
-                            top: 0;
-                            left: 50%;
-                            margin-left: -72px;
-                        }
-                    }
-
-                    .collapse {
-                        .shouye {
-                            display: none;
-                        }
-
-                        .navbar-right {
-                            width: 55px;
-
-                            .right {
-                                .globe {
-                                    display: none;
-                                }
-                            }
-
-                        }
-                    }
-                }
-            }
-        }
-
-    }
-    .small_img{
+    .small_img {
         background-color: #1d1d1d;
-        .container{
-            .row{
-                .left{
-                    
-                }
-                .right{
-                    h1{
-                        color: white;
+
+        .container {
+            .row {
+                .left {
+
+                    img {
+                        width: 100%;
                     }
-                    p{
-                        color:white;
+                }
+
+                .right {
+
+                    h1 {
+                        color: #a1a1a1;
+                        cursor: pointer;
+                    }
+
+                    p {
+                        color: #666666;
+                        cursor: pointer;
+
+                        &:hover {
+                            color: #009d86;
+                        }
                     }
                 }
             }
@@ -239,32 +386,33 @@ body {
             // overflow: hidden;
             .row {
                 .left {
+                    transform: translateX(-1000px);
+                    opacity: 0;
+                    transition: all 2s ease-in-out;
+
                     p {
                         color: #5e5e5e;
                         margin-top: 10px;
-                        // transform: translateY(-200px);
-                        // opacity: 0;
-                        transition: all 1s ease-in-out;
                     }
                 }
 
                 .right {
                     height: 40px;
-                    // transform: translateY(200px);
-                    // opacity: 0;
-                    transition: all 1s ease-in-out;
+                    transform: translateX(1000px);
+                    opacity: 0;
+                    transition: all 2s ease-in-out;
+
                     a {
                         vertical-align: middle;
                         display: inline-block;
                         width: 40px;
                         height: 40px;
 
-                        //    background-color:red;
                         &#left {
                             background-image: url("../images/icon_cn.png");
                             background-repeat: no-repeat;
                             background-position: 0px 0px;
-                           
+
                         }
 
                         &#left:hover {
@@ -275,7 +423,7 @@ body {
                             background-image: url("../images/icon_cn.png");
                             background-repeat: no-repeat;
                             background-position: -40px 0px;
-                            
+
                         }
 
                         &#center:hover {
@@ -286,7 +434,7 @@ body {
                             background-image: url("../images/icon_cn.png");
                             background-repeat: no-repeat;
                             background-position: -80px 0px;
-                            
+
                         }
 
                         &#right:hover {

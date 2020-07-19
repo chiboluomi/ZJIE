@@ -1,3 +1,6 @@
+body {
+  background-color: #b3acac;
+}
 .part1 {
   width: 100%;
 }
@@ -52,4 +55,24 @@
 }
 .part2 .container .row div:nth-of-type(2) a img {
   width: 100%;
+}
+.part3 .title {
+  text-align: center;
+  margin: 30px 0px;
+}
+.part3 .container .row div {
+  text-align: center;
+}
+.part3 .container .row div a {
+  display: inline-block;
+  box-shadow: 2px 2px 16px #333;
+  transition: all 0.5s;
+}
+.part3 .container .row div a:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+  box-shadow: 2px 2px 20px #333;
+}
+.part3 .container .row div a img {
+  height: 300px;
 }
