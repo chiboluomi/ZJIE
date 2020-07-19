@@ -1,0 +1,305 @@
+body {
+    height: 100vh;
+    // background: #1d1d1d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1d1d1d;
+}
+
+.stage {
+    width: 500px;
+    overflow: hidden;
+
+    audio {
+        width: 100%;
+        height: 40px;
+    }
+
+    .card {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        padding: 20px;
+        box-sizing: border-box;
+
+        .mask {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-image: url('https://p2.music.126.net/yWtj0UXRJBCT9YI7csmAcw==/109951164190741294.jpg');
+            background-size: cover;
+            background-position: center;
+            filter: blur(10px) brightness(0.8) contrast(1.2);
+            transform: scale(2);
+            z-index: -1;
+        }
+
+        .left {
+            position: relative;
+
+            .cd {
+                width: 150px;
+                height: 150px;
+                z-index: 0;
+                position: relative;
+
+                img {
+                    width: 100%;
+                }
+
+                .inner {
+                    position: absolute;
+                    top: 25px;
+                    left: 25px;
+                    height: 100px;
+                    width: 100px;
+                    border-radius: 50%;
+                    overflow: hidden;
+
+
+                    img {
+                        width: 100%;
+                        transform-origin: center center;
+                        animation: mymove linear 3s infinite;
+                        animation-play-state: paused;
+
+                        &.playing {
+                            animation-play-state: running;
+                        }
+                    }
+                }
+            }
+
+            .cd_tou {
+                height: 75px;
+                left: 170px;
+                position: absolute;
+                top: 0;
+                left: 140px;
+                transform-origin: 14px 7px;
+                transform: rotate(-10deg);
+
+                img {
+                    height: 75px;
+                    z-index: 1;
+
+                }
+
+                &.playing {
+                    transform: rotate(0deg);
+                }
+
+            }
+        }
+
+        .right {
+            flex: 1;
+            margin-left: 25px;
+
+            h4 {
+                margin: 0;
+            }
+
+            p {
+                margin: 0;
+            }
+
+            .controls {
+                display: flex;
+                height: 25px;
+                width: 100%;
+                margin: 10px 0px;
+
+                .left {
+                    flex: 1;
+
+                    span {
+                        float: left;
+                        display: inline-block !important;
+                        margin-right: 6px !important;
+
+                        i {
+                            font-weight: bold;
+                            color: white;
+                            font-size: 20px;
+                            line-height: 25px;
+
+                            &.cycle {
+                                font-size: 25px;
+
+                            }
+                        }
+
+                        &.play_pause {
+                            i {
+                                display: block;
+
+                                &.play {
+                                    display: none;
+                                }
+                            }
+                        }
+
+                        &.loop_ran_cycle {
+                            i {
+                                &.loop {
+                                    display: none;
+                                }
+
+                                &.random {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .right {
+                    flex: 1;
+                    display: flex;
+
+                    span {
+                        display: block;
+                        flex: 2;
+
+                        i {
+                            color: white;
+                            font-size: 25px;
+
+                            &.muted {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    .progress2 {
+                        flex: 8;
+                        margin-top: 8px;
+                        background-color: rgba(255, 255, 255, 0.5);
+                        border-radius: 2px;
+                        height: 5px;
+                        position: relative;
+
+                        input {
+                            margin: 0;
+                            width: 100%;
+                            height: 5px;
+                            background-color: rgba(255, 255, 255, 0.5);
+                            border-radius: 2px;
+                            // visibility: hidden;
+                            opacity: 0;
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            z-index: 1;
+                        }
+
+                        .slider2 {
+                            margin: 0;
+                            height: 5px;
+                            background-color: #0cb6d4;
+                            border-radius: 2px;
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            // width: 100%;
+                        }
+                    }
+                }
+            }
+
+            .progress {
+                width: 100%;
+                background-color: rgba(255, 255, 255, 0.5);
+                border-radius: 2px;
+                height: 5px;
+                margin-top: 20px;
+                position: relative;
+
+                .range {
+                    margin: 0;
+                    width: 100%;
+                    height: 5px;
+                    background-color: rgba(255, 255, 255, 0.5);
+                    border-radius: 2px;
+                    // visibility: hidden;
+                    opacity: 0;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    z-index: 1;
+                }
+
+                .slider {
+                    width: 0;
+                    height: 5px;
+                    background-color: #0cb6d4;
+                    border-radius: 2px;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+            }
+
+            .time {
+                position: relative;
+
+                .left {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+
+                .right {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
+
+                ul {
+                    padding: 0;
+                    margin: 0;
+                    display: inline-block;
+                    background-color: rgba(255, 255, 255, 0.3);
+                    border-radius: 4px;
+                    margin-top: 5px;
+                    li {
+
+                        list-style: none;
+                        float: left;
+                        font-size: 15px;
+                        color: white;
+                    }
+
+
+                }
+            }
+        }
+    }
+
+    .list {
+        width: 100%;
+        background-color: #0e0e0e;
+        padding: 10px 0px;
+        border-radius: 10px;
+
+        ul {}
+    }
+}
+
+
+@keyframes mymove {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

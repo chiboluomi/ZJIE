@@ -1,0 +1,65 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "400910",
+      "name": "loop-alt3",
+      "font_class": "loopalt3",
+      "unicode": "e79b",
+      "unicode_decimal": 59291
+    },
+    {
+      "icon_id": "1410448",
+      "name": "pause",
+      "font_class": "pause",
+      "unicode": "e6a6",
+      "unicode_decimal": 59046
+    },
+    {
+      "icon_id": "5810231",
+      "name": "play",
+      "font_class": "play",
+      "unicode": "e7f6",
+      "unicode_decimal": 59382
+    },
+    {
+      "icon_id": "8106254",
+      "name": "singlecycle",
+      "font_class": "singlecycle",
+      "unicode": "e69f",
+      "unicode_decimal": 59039
+    },
+    {
+      "icon_id": "8760020",
+      "name": "random",
+      "font_class": "random",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "8953343",
+      "name": "volume",
+      "font_class": "volume",
+      "unicode": "e845",
+      "unicode_decimal": 59461
+    },
+    {
+      "icon_id": "14418906",
+      "name": "next",
+      "font_class": "next",
+      "unicode": "e72e",
+      "unicode_decimal": 59182
+    },
+    {
+      "icon_id": "14418919",
+      "name": "previous",
+      "font_class": "previous",
+      "unicode": "e732",
+      "unicode_decimal": 59186
+    }
+  ]
+}

@@ -1,0 +1,243 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1d1d1d;
+}
+.stage {
+  width: 500px;
+  overflow: hidden;
+}
+.stage audio {
+  width: 100%;
+  height: 40px;
+}
+.stage .card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.stage .card .mask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url('https://p2.music.126.net/yWtj0UXRJBCT9YI7csmAcw==/109951164190741294.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(10px) brightness(0.8) contrast(1.2);
+  transform: scale(2);
+  z-index: -1;
+}
+.stage .card .left {
+  position: relative;
+}
+.stage .card .left .cd {
+  width: 150px;
+  height: 150px;
+  z-index: 0;
+  position: relative;
+}
+.stage .card .left .cd img {
+  width: 100%;
+}
+.stage .card .left .cd .inner {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.stage .card .left .cd .inner img {
+  width: 100%;
+  transform-origin: center center;
+  animation: mymove linear 3s infinite;
+  animation-play-state: paused;
+}
+.stage .card .left .cd .inner img.playing {
+  animation-play-state: running;
+}
+.stage .card .left .cd_tou {
+  height: 75px;
+  left: 170px;
+  position: absolute;
+  top: 0;
+  left: 140px;
+  transform-origin: 14px 7px;
+  transform: rotate(-10deg);
+}
+.stage .card .left .cd_tou img {
+  height: 75px;
+  z-index: 1;
+}
+.stage .card .left .cd_tou.playing {
+  transform: rotate(0deg);
+}
+.stage .card .right {
+  flex: 1;
+  margin-left: 25px;
+}
+.stage .card .right h4 {
+  margin: 0;
+}
+.stage .card .right p {
+  margin: 0;
+}
+.stage .card .right .controls {
+  display: flex;
+  height: 25px;
+  width: 100%;
+  margin: 10px 0px;
+}
+.stage .card .right .controls .left {
+  flex: 1;
+}
+.stage .card .right .controls .left span {
+  float: left;
+  display: inline-block !important;
+  margin-right: 6px !important;
+}
+.stage .card .right .controls .left span i {
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+  line-height: 25px;
+}
+.stage .card .right .controls .left span i.cycle {
+  font-size: 25px;
+}
+.stage .card .right .controls .left span.play_pause i {
+  display: block;
+}
+.stage .card .right .controls .left span.play_pause i.play {
+  display: none;
+}
+.stage .card .right .controls .left span.loop_ran_cycle i.loop {
+  display: none;
+}
+.stage .card .right .controls .left span.loop_ran_cycle i.random {
+  display: none;
+}
+.stage .card .right .controls .right {
+  flex: 1;
+  display: flex;
+}
+.stage .card .right .controls .right span {
+  display: block;
+  flex: 2;
+}
+.stage .card .right .controls .right span i {
+  color: white;
+  font-size: 25px;
+}
+.stage .card .right .controls .right span i.muted {
+  display: none;
+}
+.stage .card .right .controls .right .progress2 {
+  flex: 8;
+  margin-top: 8px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 2px;
+  height: 5px;
+  position: relative;
+}
+.stage .card .right .controls .right .progress2 input {
+  margin: 0;
+  width: 100%;
+  height: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 2px;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.stage .card .right .controls .right .progress2 .slider2 {
+  margin: 0;
+  height: 5px;
+  background-color: #0cb6d4;
+  border-radius: 2px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.stage .card .right .progress {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 2px;
+  height: 5px;
+  margin-top: 20px;
+  position: relative;
+}
+.stage .card .right .progress .range {
+  margin: 0;
+  width: 100%;
+  height: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 2px;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.stage .card .right .progress .slider {
+  width: 0;
+  height: 5px;
+  background-color: #0cb6d4;
+  border-radius: 2px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.stage .card .right .time {
+  position: relative;
+}
+.stage .card .right .time .left {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.stage .card .right .time .right {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.stage .card .right .time ul {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  margin-top: 5px;
+}
+.stage .card .right .time ul li {
+  list-style: none;
+  float: left;
+  font-size: 15px;
+  color: white;
+}
+.stage .list {
+  width: 100%;
+  background-color: #0e0e0e;
+  padding: 10px 0px;
+  border-radius: 10px;
+}
+@keyframes mymove {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
