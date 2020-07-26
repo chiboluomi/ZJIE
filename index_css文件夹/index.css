@@ -76,3 +76,51 @@ body {
 .part3 .container .row div a img {
   height: 300px;
 }
+.part4 .title {
+  text-align: center;
+  margin: 30px 0px;
+}
+.part4 .container .row:nth-of-type(1) div {
+  text-align: center;
+}
+.part4 .container .row:nth-of-type(1) div a {
+  display: inline-block;
+  box-shadow: 2px 2px 16px #333;
+  transition: all 0.5s;
+}
+.part4 .container .row:nth-of-type(1) div a:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+  box-shadow: 2px 2px 20px #333;
+}
+.part4 .container .row:nth-of-type(1) div a img {
+  height: 100px;
+}
+.part4 .container .row:nth-of-type(1) div:nth-of-type(2) {
+  margin-top: 40px;
+}
+.part4 .container .row:nth-of-type(1) div:nth-of-type(2) a img {
+  height: 50px;
+}
+.part4 .container .row:nth-of-type(2) {
+  margin-top: 50px;
+}
+.part4 .container .row:nth-of-type(2) div {
+  text-align: center;
+}
+.part4 .container .row:nth-of-type(2) div a {
+  display: inline-block;
+  box-shadow: 2px 2px 16px #333;
+  transition: all 0.5s;
+}
+.part4 .container .row:nth-of-type(2) div a:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+  box-shadow: 2px 2px 20px #333;
+}
+.part4 .container .row:nth-of-type(2) div:nth-of-type(1) a img {
+  height: 40px !important;
+}
+.part4 .container .row:nth-of-type(2) div:nth-of-type(2) a img {
+  height: 100px;
+}

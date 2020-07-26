@@ -10,6 +10,7 @@ body {
 }
 .stage {
   overflow: hidden;
+  margin-top: 50px;
 }
 .stage ul {
   float: left;
